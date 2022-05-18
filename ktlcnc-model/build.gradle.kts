@@ -28,6 +28,9 @@ tasks.withType<KotlinCompile> {
 
 publishing {
     publications {
+        create<MavenPublication>("maven") {
+            from(components["java"])
+        }
         publications.withType<MavenPublication> {
             pom {
                 name.set("Kotlin LinuxCNC")
