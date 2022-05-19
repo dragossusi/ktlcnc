@@ -59,22 +59,22 @@ map<string, halobject> componentMap;
 
 // Call the static method from kotlin that created the halPin with boolean type
 jobject createBitPin(JNIEnv *env, jstring compName, jstring name, jobject dir){
-    jclass clHalPin  = env->FindClass("com/mindovercnc/base/data/HalPin");
-    jmethodID myMethod = env->GetStaticMethodID(clHalPin, "bit", "(Ljava/lang/String;Ljava/lang/String;Lcom/mindovercnc/base/data/HalPin$Dir;)Lcom/mindovercnc/base/data/BitHalPin;");
+    jclass clHalPin  = env->FindClass("com/mindovercnc/linuxcnc/model/HalPin");
+    jmethodID myMethod = env->GetStaticMethodID(clHalPin, "bit", "(Ljava/lang/String;Ljava/lang/String;Lcom/mindovercnc/linuxcnc/model/HalPin$Dir;)Lcom/mindovercnc/linuxcnc/model/BitHalPin;");
     return env->CallStaticObjectMethod(clHalPin, myMethod, compName, name, dir);
 }
 
 // Call the static method from kotlin that created the halPin with float type
 jobject createFloatPin(JNIEnv *env, jstring compName, jstring name, jobject dir){
-    jclass clHalPin  = env->FindClass("com/mindovercnc/base/data/HalPin");
-    jmethodID myMethod = env->GetStaticMethodID(clHalPin, "float", "(Ljava/lang/String;Ljava/lang/String;Lcom/mindovercnc/base/data/HalPin$Dir;)Lcom/mindovercnc/base/data/FloatHalPin;");
+    jclass clHalPin  = env->FindClass("com/mindovercnc/linuxcnc/model/HalPin");
+    jmethodID myMethod = env->GetStaticMethodID(clHalPin, "float", "(Ljava/lang/String;Ljava/lang/String;Lcom/mindovercnc/linuxcnc/model/HalPin$Dir;)Lcom/mindovercnc/linuxcnc/model/FloatHalPin;");
     return env->CallStaticObjectMethod(clHalPin, myMethod, compName, name, dir);
 }
 
 // Call the static method from kotlin that created the halPin with s32 type
 jobject createS32Pin(JNIEnv *env, jstring compName, jstring name, jobject dir){
-    jclass clHalPin  = env->FindClass("com/mindovercnc/base/data/HalPin");
-    jmethodID myMethod = env->GetStaticMethodID(clHalPin, "s32", "(Ljava/lang/String;Ljava/lang/String;Lcom/mindovercnc/base/data/HalPin$Dir;)Lcom/mindovercnc/base/data/IntHalPin;");
+    jclass clHalPin  = env->FindClass("com/mindovercnc/linuxcnc/model/HalPin");
+    jmethodID myMethod = env->GetStaticMethodID(clHalPin, "s32", "(Ljava/lang/String;Ljava/lang/String;Lcom/mindovercnc/linuxcnc/model/HalPin$Dir;)Lcom/mindovercnc/linuxcnc/model/IntHalPin;");
     return env->CallStaticObjectMethod(clHalPin, myMethod, compName, name, dir);
 }
 
@@ -90,7 +90,7 @@ JNIEXPORT jobject JNICALL Java_com_mindovercnc_linuxcnc_HalHandler_createCompone
     env->ReleaseStringUTFChars(componentName, compName);
 
     if(result > 0){
-        jclass halCompClass  = env->FindClass("com/mindovercnc/base/data/HalComponent");
+        jclass halCompClass  = env->FindClass("com/mindovercnc/linuxcnc/model/HalComponent");
         jfieldID fCompName   = env->GetFieldID(halCompClass, "name", "Ljava/lang/String;");
         jfieldID fCompId     = env->GetFieldID(halCompClass, "componentId", "I");
 
@@ -115,15 +115,15 @@ JNIEXPORT jobject JNICALL Java_com_mindovercnc_linuxcnc_HalHandler_createCompone
 /*
  * Class:     com_mindovercnc_linuxcnc_HalComponent
  * Method:    addPin
- * Signature: (Lcom/mindovercnc/base/data/HalPin;)I
+ * Signature: (Lcom/mindovercnc/linuxcnc/model/HalPin;)I
  */
-JNIEXPORT jobject JNICALL Java_com_mindovercnc_base_data_HalComponent_addPin
+JNIEXPORT jobject JNICALL Java_com_mindovercnc_linuxcnc_model_HalComponent_addPin
   (JNIEnv *env, jobject thisObject, jstring pinName, jobject pinTypeObj, jobject pinDirObj){
 
-    jclass halCompClass  = env->FindClass("com/mindovercnc/base/data/HalComponent");
-    jclass clHalPin  = env->FindClass("com/mindovercnc/base/data/HalPin");
-    jclass clPinType  = env->FindClass("com/mindovercnc/base/data/HalPin$Type");
-    jclass clPinDir  = env->FindClass("com/mindovercnc/base/data/HalPin$Dir");
+    jclass halCompClass  = env->FindClass("com/mindovercnc/linuxcnc/model/HalComponent");
+    jclass clHalPin  = env->FindClass("com/mindovercnc/linuxcnc/model/HalPin");
+    jclass clPinType  = env->FindClass("com/mindovercnc/linuxcnc/model/HalPin$Type");
+    jclass clPinDir  = env->FindClass("com/mindovercnc/linuxcnc/model/HalPin$Dir");
 
     //Get details of the component object
     jfieldID fCompName    = env->GetFieldID(halCompClass, "name", "Ljava/lang/String;");
@@ -182,10 +182,10 @@ JNIEXPORT jobject JNICALL Java_com_mindovercnc_base_data_HalComponent_addPin
     return NULL;
   }
 
-JNIEXPORT void JNICALL Java_com_mindovercnc_base_data_HalComponent_setReady
+JNIEXPORT void JNICALL Java_com_mindovercnc_linuxcnc_model_HalComponent_setReady
   (JNIEnv *env, jobject thisObject, jint componentId){
 
-//    jclass halCompClass  = env->FindClass("com/mindovercnc/base/data/HalComponent");
+//    jclass halCompClass  = env->FindClass("com/mindovercnc/linuxcnc/model/HalComponent");
 //    jfieldID fCompId = env->GetFieldID(halCompClass, "componentId", "I");
 //    int componentId = env->GetIntField(thisObject, fCompId);
     rtapi_print_msg(RTAPI_MSG_ERR, "ready compId is: (%d)\n", componentId);
@@ -193,10 +193,10 @@ JNIEXPORT void JNICALL Java_com_mindovercnc_base_data_HalComponent_setReady
     rtapi_print_msg(RTAPI_MSG_ERR, "ready result is: (%s)\n", res);
   }
 
-JNIEXPORT void JNICALL Java_com_mindovercnc_base_data_BitHalPin_setPinValue
+JNIEXPORT void JNICALL Java_com_mindovercnc_linuxcnc_model_BitHalPin_setPinValue
   (JNIEnv *env, jobject thisObject, jboolean value){
 
-    jclass clHalPin     = env->FindClass("com/mindovercnc/base/data/BitHalPin");
+    jclass clHalPin     = env->FindClass("com/mindovercnc/linuxcnc/model/BitHalPin");
     jfieldID fCompName   = env->GetFieldID(clHalPin, "componentName", "Ljava/lang/String;");
     jfieldID fPinName   = env->GetFieldID(clHalPin, "name", "Ljava/lang/String;");
 
@@ -211,10 +211,10 @@ JNIEXPORT void JNICALL Java_com_mindovercnc_base_data_BitHalPin_setPinValue
     //rtapi_print_msg(RTAPI_MSG_ERR, "pinName setPinValue is: (%b)\n", value);
   }
 
-JNIEXPORT void JNICALL Java_com_mindovercnc_base_data_FloatHalPin_setPinValue
+JNIEXPORT void JNICALL Java_com_mindovercnc_linuxcnc_model_FloatHalPin_setPinValue
   (JNIEnv *env, jobject thisObject, jfloat value){
 
-    jclass clHalPin     = env->FindClass("com/mindovercnc/base/data/FloatHalPin");
+    jclass clHalPin     = env->FindClass("com/mindovercnc/linuxcnc/model/FloatHalPin");
     jfieldID fCompName   = env->GetFieldID(clHalPin, "componentName", "Ljava/lang/String;");
     jfieldID fPinName   = env->GetFieldID(clHalPin, "name", "Ljava/lang/String;");
 
@@ -229,10 +229,10 @@ JNIEXPORT void JNICALL Java_com_mindovercnc_base_data_FloatHalPin_setPinValue
     //rtapi_print_msg(RTAPI_MSG_ERR, "pinName setPinValue is: (%b)\n", value);
   }
 
-JNIEXPORT void JNICALL Java_com_mindovercnc_base_data_IntHalPin_setPinValue
+JNIEXPORT void JNICALL Java_com_mindovercnc_linuxcnc_model_IntHalPin_setPinValue
   (JNIEnv *env, jobject thisObject, jint value){
 
-    jclass clHalPin     = env->FindClass("com/mindovercnc/base/data/IntHalPin");
+    jclass clHalPin     = env->FindClass("com/mindovercnc/linuxcnc/model/IntHalPin");
     jfieldID fCompName   = env->GetFieldID(clHalPin, "componentName", "Ljava/lang/String;");
     jfieldID fPinName   = env->GetFieldID(clHalPin, "name", "Ljava/lang/String;");
 
@@ -250,12 +250,12 @@ JNIEXPORT void JNICALL Java_com_mindovercnc_base_data_IntHalPin_setPinValue
 /*
  * Class:     com_mindovercnc_linuxcnc_HalComponent
  * Method:    getPin
- * Signature: (Ljava/lang/String;)Lcom/mindovercnc/base/data/HalPin;
+ * Signature: (Ljava/lang/String;)Lcom/mindovercnc/linuxcnc/model/HalPin;
  */
-JNIEXPORT jobject JNICALL Java_com_mindovercnc_base_data_BitHalPin_refreshValue
+JNIEXPORT jobject JNICALL Java_com_mindovercnc_linuxcnc_model_BitHalPin_refreshValue
   (JNIEnv *env, jobject thisObject){
 
-    jclass clHalPin     = env->FindClass("com/mindovercnc/base/data/BitHalPin");
+    jclass clHalPin     = env->FindClass("com/mindovercnc/linuxcnc/model/BitHalPin");
     jfieldID fCompName   = env->GetFieldID(clHalPin, "componentName", "Ljava/lang/String;");
     jfieldID fPinName   = env->GetFieldID(clHalPin, "name", "Ljava/lang/String;");
 
@@ -279,12 +279,12 @@ JNIEXPORT jobject JNICALL Java_com_mindovercnc_base_data_BitHalPin_refreshValue
 /*
  * Class:     com_mindovercnc_linuxcnc_HalComponent
  * Method:    getPin
- * Signature: (Ljava/lang/String;)Lcom/mindovercnc/base/data/HalPin;
+ * Signature: (Ljava/lang/String;)Lcom/mindovercnc/linuxcnc/model/HalPin;
  */
-JNIEXPORT jobject JNICALL Java_com_mindovercnc_base_data_FloatHalPin_refreshValue
+JNIEXPORT jobject JNICALL Java_com_mindovercnc_linuxcnc_model_FloatHalPin_refreshValue
   (JNIEnv *env, jobject thisObject){
 
-    jclass clHalPin     = env->FindClass("com/mindovercnc/base/data/FloatHalPin");
+    jclass clHalPin     = env->FindClass("com/mindovercnc/linuxcnc/model/FloatHalPin");
     jfieldID fCompName   = env->GetFieldID(clHalPin, "componentName", "Ljava/lang/String;");
     jfieldID fPinName   = env->GetFieldID(clHalPin, "name", "Ljava/lang/String;");
 
@@ -308,12 +308,12 @@ JNIEXPORT jobject JNICALL Java_com_mindovercnc_base_data_FloatHalPin_refreshValu
 /*
  * Class:     com_mindovercnc_linuxcnc_HalComponent
  * Method:    getPin
- * Signature: (Ljava/lang/String;)Lcom/mindovercnc/base/data/HalPin;
+ * Signature: (Ljava/lang/String;)Lcom/mindovercnc/linuxcnc/model/HalPin;
  */
-JNIEXPORT jobject JNICALL Java_com_mindovercnc_base_data_IntHalPin_refreshValue
+JNIEXPORT jobject JNICALL Java_com_mindovercnc_linuxcnc_model_IntHalPin_refreshValue
   (JNIEnv *env, jobject thisObject){
 
-    jclass clHalPin     = env->FindClass("com/mindovercnc/base/data/IntHalPin");
+    jclass clHalPin     = env->FindClass("com/mindovercnc/linuxcnc/model/IntHalPin");
     jfieldID fCompName   = env->GetFieldID(clHalPin, "componentName", "Ljava/lang/String;");
     jfieldID fPinName   = env->GetFieldID(clHalPin, "name", "Ljava/lang/String;");
 

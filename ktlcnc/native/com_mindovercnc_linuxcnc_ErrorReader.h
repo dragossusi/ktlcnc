@@ -10,7 +10,7 @@ extern "C" {
 /*
  * Class:     com_mindovercnc_linuxcnc_ErrorReader
  * Method:    fetchMessage
- * Signature: ()Lcom/mindovercnc/base/data/SystemMessage;
+ * Signature: ()Lcom/mindovercnc/linuxcnc/model/SystemMessage;
  */
 JNIEXPORT jobject JNICALL Java_com_mindovercnc_linuxcnc_ErrorReader_fetchMessage
   (JNIEnv *, jobject);

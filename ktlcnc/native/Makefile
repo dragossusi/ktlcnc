@@ -46,6 +46,7 @@ clean:
 	rm *.d
 	rm *.so
 	rm DumpBufDesc
+	rm ../src/main/resources/libLinuxCNC.so
 
 # copy:
 

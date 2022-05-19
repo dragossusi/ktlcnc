@@ -2,25 +2,25 @@
 #include <jni.h>
 /* Header for class com_mindovercnc_linuxcnc_HalComponent */
 
-#ifndef _Included_com_mindovercnc_base_data_BitHalPin
-#define _Included_com_mindovercnc_base_data_BitHalPin
+#ifndef _Included_com_mindovercnc_linuxcnc_model_BitHalPin
+#define _Included_com_mindovercnc_linuxcnc_model_BitHalPin
 #ifdef __cplusplus
 extern "C" {
 #endif
 /*
  * Class:     com_mindovercnc_linuxcnc_HalComponent
  * Method:    addPin
- * Signature: (Lcom/mindovercnc/base/data/HalPin;)I
+ * Signature: (Lcom/mindovercnc/linuxcnc/model/HalPin;)I
  */
-JNIEXPORT void JNICALL Java_com_mindovercnc_base_data_BitHalPin_setPinValue
+JNIEXPORT void JNICALL Java_com_mindovercnc_linuxcnc_model_BitHalPin_setPinValue
   (JNIEnv *, jobject, jboolean);
 
 /*
  * Class:     com_mindovercnc_linuxcnc_HalComponent
  * Method:    getPin
- * Signature: (Ljava/lang/String;)Lcom/mindovercnc/base/data/HalPin;
+ * Signature: (Ljava/lang/String;)Lcom/mindovercnc/linuxcnc/model/HalPin;
  */
-JNIEXPORT jobject JNICALL Java_com_mindovercnc_base_data_BitHalPin_refreshValue
+JNIEXPORT jobject JNICALL Java_com_mindovercnc_linuxcnc_model_BitHalPin_refreshValue
   (JNIEnv *, jobject);
 
 #ifdef __cplusplus

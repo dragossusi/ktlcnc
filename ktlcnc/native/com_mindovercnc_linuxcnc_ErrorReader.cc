@@ -58,51 +58,51 @@ JNIEXPORT jobject JNICALL Java_com_mindovercnc_linuxcnc_ErrorReader_fetchMessage
   if (!type) return NULL;
   char error_buffer[LINELEN];
 
-  jclass clSysMsg  = env->FindClass("com/mindovercnc/base/data/SystemMessage");
-  jclass clMsgType = env->FindClass("com/mindovercnc/base/data/SystemMessage$MessageType");
+  jclass clSysMsg  = env->FindClass("com/mindovercnc/linuxcnc/model/SystemMessage");
+  jclass clMsgType = env->FindClass("com/mindovercnc/linuxcnc/model/SystemMessage$MessageType");
   jfieldID fEnumMsgType;
 
   switch (type) {
     case EMC_OPERATOR_ERROR_TYPE: {
          fEnumMsgType = env->GetStaticFieldID(clMsgType
                                             , "OperatorError"
-                                            , "Lcom/mindovercnc/base/data/SystemMessage$MessageType;");
+                                            , "Lcom/mindovercnc/linuxcnc/model/SystemMessage$MessageType;");
          strncpy(error_buffer, ((EMC_OPERATOR_ERROR*)ec->get_address())->error, LINELEN-1);
          } break;
     case EMC_OPERATOR_TEXT_TYPE: {
          fEnumMsgType = env->GetStaticFieldID(clMsgType
                                             , "OperatorText"
-                                            , "Lcom/mindovercnc/base/data/SystemMessage$MessageType;");
+                                            , "Lcom/mindovercnc/linuxcnc/model/SystemMessage$MessageType;");
          strncpy(error_buffer, ((EMC_OPERATOR_TEXT*)ec->get_address())->text, LINELEN-1);
          } break;
     case EMC_OPERATOR_DISPLAY_TYPE: {
          fEnumMsgType = env->GetStaticFieldID(clMsgType
                                             , "OperatorDisplay"
-                                            , "Lcom/mindovercnc/base/data/SystemMessage$MessageType;");
+                                            , "Lcom/mindovercnc/linuxcnc/model/SystemMessage$MessageType;");
          strncpy(error_buffer, ((EMC_OPERATOR_DISPLAY*)ec->get_address())->display, LINELEN-1);
          } break;
     case NML_ERROR_TYPE: {
          fEnumMsgType = env->GetStaticFieldID(clMsgType
                                             , "NMLError"
-                                            , "Lcom/mindovercnc/base/data/SystemMessage$MessageType;");
+                                            , "Lcom/mindovercnc/linuxcnc/model/SystemMessage$MessageType;");
          strncpy(error_buffer, ((NML_ERROR*)ec->get_address())->error, LINELEN-1);
          } break;
     case NML_TEXT_TYPE: {
          fEnumMsgType = env->GetStaticFieldID(clMsgType
                                             , "NMLText"
-                                            , "Lcom/mindovercnc/base/data/SystemMessage$MessageType;");
+                                            , "Lcom/mindovercnc/linuxcnc/model/SystemMessage$MessageType;");
          strncpy(error_buffer, ((NML_TEXT*)ec->get_address())->text, LINELEN-1);
          } break;
     case NML_DISPLAY_TYPE: {
          fEnumMsgType = env->GetStaticFieldID(clMsgType
                                             , "NMLDisplay"
-                                            , "Lcom/mindovercnc/base/data/SystemMessage$MessageType;");
+                                            , "Lcom/mindovercnc/linuxcnc/model/SystemMessage$MessageType;");
          strncpy(error_buffer, ((NML_DISPLAY*)ec->get_address())->display, LINELEN-1);
          } break;
     default: {
          fEnumMsgType = env->GetStaticFieldID(clMsgType
                                             , "NMLError"
-                                            , "Lcom/mindovercnc/base/data/SystemMessage$MessageType;");
+                                            , "Lcom/mindovercnc/linuxcnc/model/SystemMessage$MessageType;");
          sprintf(error_buffer, "unrecognized error %d", type);
          } break;
     }
@@ -115,7 +115,7 @@ JNIEXPORT jobject JNICALL Java_com_mindovercnc_linuxcnc_ErrorReader_fetchMessage
                                            , "Ljava/lang/String;");
   jfieldID fType           = env->GetFieldID(clSysMsg
                                            , "type"
-                                           , "Lcom/mindovercnc/base/data/SystemMessage$MessageType;");
+                                           , "Lcom/mindovercnc/linuxcnc/model/SystemMessage$MessageType;");
   env->SetObjectField(newSystemMsg, fMsg,  errorMessage);
   env->SetObjectField(newSystemMsg, fType, enumMessageType);
 

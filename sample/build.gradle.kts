@@ -12,6 +12,7 @@ repositories {
 }
 
 dependencies {
+    implementation(project(":ktlcnc"))
     testImplementation(kotlin("test"))
 }
 
