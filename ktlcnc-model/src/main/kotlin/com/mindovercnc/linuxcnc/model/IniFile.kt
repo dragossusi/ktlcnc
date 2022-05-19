@@ -4,7 +4,7 @@ import java.io.File
 
 data class IniFile(
     val subroutinePath: String,
-    val programPrefix: String,
+    val programDir: File,
     val parameterFile: File,
     val toolTableFile: File,
     val joints: List<JointParameters>

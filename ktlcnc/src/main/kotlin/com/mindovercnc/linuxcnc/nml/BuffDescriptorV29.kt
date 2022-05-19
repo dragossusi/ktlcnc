@@ -1,7 +1,6 @@
 package com.mindovercnc.linuxcnc.nml
 
 import java.util.*
-import kotlin.collections.HashMap
 
 class BuffDescriptorV29 : BuffDescriptor {
 
