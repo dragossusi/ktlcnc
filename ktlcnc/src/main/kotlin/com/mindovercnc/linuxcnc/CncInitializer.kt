@@ -6,6 +6,9 @@ object CncInitializer {
 
     private const val libName = "libLinuxCNC.so"
 
+    /**
+     * Extract .so file into the destination folder
+     */
     operator fun invoke(destFolder: File): File {
         val destFile = File(destFolder, libName)
         if (!destFile.exists()) {
@@ -18,6 +21,7 @@ object CncInitializer {
         //System.loadLibrary("linuxcncini");
         System.loadLibrary("nml")
         System.loadLibrary("linuxcnchal")
+        // Load the .so file from path in which we extracted it.
         System.load(destFile.absolutePath)
         return destFile
     }
