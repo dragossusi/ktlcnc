@@ -1,2 +1,6 @@
 *.so
 *.o
+*.d
+*.map
+TestNML
+DumpBufDesc
