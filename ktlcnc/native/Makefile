@@ -58,6 +58,7 @@ headers:
 %.o : %.cc
 	$(GCC) -c $(CC_FLAGS) -o $@ $<
 
+# we add the libLinuxCNC.so into the resources folder so that when the jar is created, it contains the .so file
 libLinuxCNC.so: $(O_NML) $(LC_OBJS)
 	$(GCC) -shared $(LC_FLAGS) -o $@ $^
 	cp libLinuxCNC.so ../src/main/resources
