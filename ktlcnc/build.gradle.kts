@@ -10,7 +10,7 @@ group = "ro.dragossusi"
 version = Versions.app
 
 kotlin {
-    val paths = NativePaths.getNativePaths().joinToString(":")
+    val paths = NativePaths.getNativePaths(project).joinToString(":")
     val argument = "-Djava.library.path=$paths"
     println(argument)
     kotlinDaemonJvmArgs = listOf(argument)

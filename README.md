@@ -5,9 +5,18 @@ Kotlin library to communicate with LinuxCNC using JNI.
 
 **Assuming you have linuxcnc installed**
 
-### Env variables
+### Variables
 
-You need to set some environment variables first:
+You need to define the paths first, in env variables or `gradle.properties` for genereting the jar.
+
+
+| Env           | Property      | Description                |
+|---------------|---------------|----------------------------|
+| LINUXCNC_HOME | linuxcnc.home | The linuxcnc home folder   |
+| LINUXCNC_JDK  | linuxcnc.jdk  | The jdk to be used for JNI |
+
+
+Example using env(required for `make`):
 
 ```shell
 export LINUXCNC_HOME=/path/to/linuxcnc

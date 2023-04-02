@@ -116,3 +116,12 @@ fun CncStatus.getRelativeToolPosition(): Position {
 
     return builder.build()
 }
+
+
+val CncStatus.isSpindleOn
+    get() = motionStatus.spindlesStatus[0].direction == SpindleStatus.Direction.REVERSE ||
+            motionStatus.spindlesStatus[0].direction == SpindleStatus.Direction.FORWARD
+
+val CncStatus.isInMdiMode get() = taskStatus.taskMode == TaskMode.TaskModeMDI
+val CncStatus.isInManualMode get() = taskStatus.taskMode == TaskMode.TaskModeManual
+val CncStatus.isInAutoMode get() = taskStatus.taskMode == TaskMode.TaskModeAuto

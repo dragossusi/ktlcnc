@@ -1,16 +1,14 @@
+import org.gradle.api.Project
+import java.io.File
+
 object NativePaths {
-    fun getNativePaths(): List<String> {
-        val home = requireEnv("LINUXCNC_HOME")
-        val jdk = requireEnv("LINUXCNC_JDK")
+    fun getNativePaths(project: Project): List<String> {
+        val home = project.requirePath("LINUXCNC_HOME", "linuxcnc.home")
+        val jdk = project.requirePath("LINUXCNC_JDK", "linuxcnc.jdk")
         return listOf(
-            "$home/lib",
-            "$jdk/lib",
-            //native path
-            //linuxcnc/lib
-            //jdk/lib
+            File(home, "lib").path,
+            File(jdk, "lib").path,
         )
     }
 
-    private fun requireEnv(name: String) = System.getenv(name)
-        ?: throw IllegalArgumentException("$name env not set")
 }

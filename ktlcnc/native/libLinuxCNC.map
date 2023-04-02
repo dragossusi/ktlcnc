@@ -1,34 +1,66 @@
 
 Merging program properties
 
-Removed property 0xc0000002 to merge /usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../../../lib/Scrt1.o (0x3) and dumpBufDesc.o (not found)
-Removed property 0xc0000002 to merge /usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../../../lib/Scrt1.o (not found) and /usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/crtendS.o (0x3)
-Removed property 0xc0000002 to merge /usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../../../lib/Scrt1.o (not found) and /usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../../../lib/crtn.o (0x3)
+Removed property 0xc0000002 to merge /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.0/../../../../lib/Scrt1.o (0x3) and TestNML.o (not found)
+Updated property 0xc0010001 (0x9) to merge /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.0/../../../../lib/Scrt1.o (0x1) and TestNML.o (0x9)
+Updated property 0xc0010002 (0x1) to merge /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.0/../../../../lib/Scrt1.o (0x0) and TestNML.o (0x1)
+Updated property 0xc0010001 (0x9) to merge /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.0/../../../../lib/Scrt1.o (0x9) and /home/dragos/Apps/linuxcnc/src/objects/emc/nml_intf/emc.o (0x1)
+Updated property 0xc0010001 (0x9) to merge /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.0/../../../../lib/Scrt1.o (0x9) and /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.0/crtendS.o (0x1)
+Updated property 0xc0010002 (0x1) to merge /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.0/../../../../lib/Scrt1.o (0x1) and /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.0/crtendS.o (0x0)
+Removed property 0xc0000002 to merge /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.0/../../../../lib/Scrt1.o (not found) and /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.0/crtendS.o (0x3)
+Updated property 0xc0010001 (0x9) to merge /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.0/../../../../lib/Scrt1.o (0x9) and /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.0/../../../../lib/crtn.o (0x1)
+Updated property 0xc0010002 (0x1) to merge /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.0/../../../../lib/Scrt1.o (0x1) and /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.0/../../../../lib/crtn.o (0x0)
+Removed property 0xc0000002 to merge /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.0/../../../../lib/Scrt1.o (not found) and /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.0/../../../../lib/crtn.o (0x3)
 
 Discarded input sections
 
  .note.GNU-stack
-                0x0000000000000000        0x0 /usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../../../lib/Scrt1.o
+                0x0000000000000000        0x0 /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.0/../../../../lib/Scrt1.o
  .note.gnu.property
-                0x0000000000000000       0x50 /usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../../../lib/crti.o
+                0x0000000000000000       0x50 /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.0/../../../../lib/crti.o
  .note.GNU-stack
-                0x0000000000000000        0x0 /usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../../../lib/crti.o
+                0x0000000000000000        0x0 /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.0/../../../../lib/crti.o
  .note.GNU-stack
-                0x0000000000000000        0x0 /usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/crtbeginS.o
+                0x0000000000000000        0x0 /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.0/crtbeginS.o
  .note.gnu.property
-                0x0000000000000000       0x50 /usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/crtbeginS.o
+                0x0000000000000000       0x50 /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.0/crtbeginS.o
+ .group         0x0000000000000000        0xc TestNML.o
  .note.GNU-stack
-                0x0000000000000000        0x0 dumpBufDesc.o
+                0x0000000000000000        0x0 TestNML.o
  .note.gnu.property
-                0x0000000000000000       0x30 dumpBufDesc.o
+                0x0000000000000000       0x30 TestNML.o
  .note.GNU-stack
-                0x0000000000000000        0x0 /usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/crtendS.o
+                0x0000000000000000        0x0 /home/dragos/Apps/linuxcnc/src/objects/emc/nml_intf/emc.o
  .note.gnu.property
-                0x0000000000000000       0x50 /usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/crtendS.o
- .note.gnu.property
-                0x0000000000000000       0x50 /usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../../../lib/crtn.o
+                0x0000000000000000       0x30 /home/dragos/Apps/linuxcnc/src/objects/emc/nml_intf/emc.o
  .note.GNU-stack
-                0x0000000000000000        0x0 /usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../../../lib/crtn.o
+                0x0000000000000000        0x0 /home/dragos/Apps/linuxcnc/src/objects/emc/nml_intf/emcops.o
+ .note.gnu.property
+                0x0000000000000000       0x30 /home/dragos/Apps/linuxcnc/src/objects/emc/nml_intf/emcops.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 /home/dragos/Apps/linuxcnc/src/objects/emc/rs274ngc/modal_state.o
+ .note.gnu.property
+                0x0000000000000000       0x30 /home/dragos/Apps/linuxcnc/src/objects/emc/rs274ngc/modal_state.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 /home/dragos/Apps/linuxcnc/src/objects/emc/tooldata/tooldata_common.o
+ .note.gnu.property
+                0x0000000000000000       0x30 /home/dragos/Apps/linuxcnc/src/objects/emc/tooldata/tooldata_common.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 /home/dragos/Apps/linuxcnc/src/objects/emc/tooldata/tooldata_mmap.o
+ .note.gnu.property
+                0x0000000000000000       0x30 /home/dragos/Apps/linuxcnc/src/objects/emc/tooldata/tooldata_mmap.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 /home/dragos/Apps/linuxcnc/src/objects/emc/tooldata/tooldata_db.o
+ .note.gnu.property
+                0x0000000000000000       0x30 /home/dragos/Apps/linuxcnc/src/objects/emc/tooldata/tooldata_db.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.0/crtendS.o
+ .note.gnu.property
+                0x0000000000000000       0x50 /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.0/crtendS.o
+ .note.gnu.property
+                0x0000000000000000       0x50 /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.0/../../../../lib/crtn.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.0/../../../../lib/crtn.o
 
 Memory Configuration
 
@@ -37,119 +69,130 @@ Name             Origin             Length             Attributes
 
 Linker script and memory map
 
-LOAD /usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../../../lib/Scrt1.o
-LOAD /usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../../../lib/crti.o
-LOAD /usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/crtbeginS.o
+LOAD /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.0/../../../../lib/Scrt1.o
+LOAD /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.0/../../../../lib/crti.o
+LOAD /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.0/crtbeginS.o
 LOAD /home/dragos/Apps/linuxcnc/lib/libnml.so.0
-LOAD /usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../../../lib/libGL.so
-LOAD dumpBufDesc.o
-LOAD /usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../../../lib/libstdc++.so
-LOAD /usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../../../lib/libm.so
+LOAD /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.0/../../../../lib/libGL.so
+LOAD TestNML.o
+LOAD /home/dragos/Apps/linuxcnc/src/objects/emc/nml_intf/emc.o
+LOAD /home/dragos/Apps/linuxcnc/src/objects/emc/nml_intf/emcops.o
+LOAD /home/dragos/Apps/linuxcnc/src/objects/emc/rs274ngc/modal_state.o
+LOAD /home/dragos/Apps/linuxcnc/src/objects/emc/tooldata/tooldata_common.o
+LOAD /home/dragos/Apps/linuxcnc/src/objects/emc/tooldata/tooldata_mmap.o
+LOAD /home/dragos/Apps/linuxcnc/src/objects/emc/tooldata/tooldata_db.o
+LOAD /home/dragos/Apps/linuxcnc/lib/libnml.so.0
+LOAD /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.0/../../../../lib/libstdc++.so
+LOAD /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.0/../../../../lib/libm.so
 START GROUP
 LOAD /usr/lib/libm.so.6
 LOAD /usr/lib/libmvec.so.1
 END GROUP
-LOAD /usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../../../lib/libgcc_s.so
+LOAD /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.0/../../../../lib/libgcc_s.so
 START GROUP
-LOAD /usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../../../lib/libgcc_s.so.1
-LOAD /usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/libgcc.a
+LOAD /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.0/../../../../lib/libgcc_s.so.1
+LOAD /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.0/libgcc.a
 END GROUP
-LOAD /usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/libgcc.a
-LOAD /usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../../../lib/libc.so
+LOAD /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.0/libgcc.a
+LOAD /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.0/../../../../lib/libc.so
 START GROUP
 LOAD /usr/lib/libc.so.6
 LOAD /usr/lib/libc_nonshared.a
 LOAD /usr/lib/ld-linux-x86-64.so.2
 END GROUP
-LOAD /usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../../../lib/libgcc_s.so
+LOAD /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.0/../../../../lib/libgcc_s.so
 START GROUP
-LOAD /usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../../../lib/libgcc_s.so.1
-LOAD /usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/libgcc.a
+LOAD /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.0/../../../../lib/libgcc_s.so.1
+LOAD /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.0/libgcc.a
 END GROUP
-LOAD /usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/libgcc.a
-LOAD /usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/crtendS.o
-LOAD /usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../../../lib/crtn.o
+LOAD /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.0/libgcc.a
+LOAD /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.0/crtendS.o
+LOAD /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.0/../../../../lib/crtn.o
                 [!provide]                        PROVIDE (__executable_start = SEGMENT_START ("text-segment", 0x0))
                 0x0000000000000318                . = (SEGMENT_START ("text-segment", 0x0) + SIZEOF_HEADERS)
 
 .interp         0x0000000000000318       0x1c
  *(.interp)
- .interp        0x0000000000000318       0x1c /usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../../../lib/Scrt1.o
+ .interp        0x0000000000000318       0x1c /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.0/../../../../lib/Scrt1.o
 
 .note.gnu.property
                 0x0000000000000338       0x40
  .note.gnu.property
-                0x0000000000000338       0x40 /usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../../../lib/Scrt1.o
+                0x0000000000000338       0x40 /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.0/../../../../lib/Scrt1.o
 
 .note.gnu.build-id
                 0x0000000000000378       0x24
  *(.note.gnu.build-id)
  .note.gnu.build-id
-                0x0000000000000378       0x24 /usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../../../lib/Scrt1.o
+                0x0000000000000378       0x24 /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.0/../../../../lib/Scrt1.o
 
 .note.ABI-tag   0x000000000000039c       0x20
- .note.ABI-tag  0x000000000000039c       0x20 /usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../../../lib/Scrt1.o
+ .note.ABI-tag  0x000000000000039c       0x20 /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.0/../../../../lib/Scrt1.o
 
 .hash
  *(.hash)
 
 .gnu.hash       0x00000000000003c0       0x1c
  *(.gnu.hash)
- .gnu.hash      0x00000000000003c0       0x1c /usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../../../lib/Scrt1.o
+ .gnu.hash      0x00000000000003c0       0x1c /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.0/../../../../lib/Scrt1.o
 
-.dynsym         0x00000000000003e0       0xc0
+.dynsym         0x00000000000003e0      0x708
  *(.dynsym)
- .dynsym        0x00000000000003e0       0xc0 /usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../../../lib/Scrt1.o
+ .dynsym        0x00000000000003e0      0x708 /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.0/../../../../lib/Scrt1.o
 
-.dynstr         0x00000000000004a0       0xf4
+.dynstr         0x0000000000000ae8      0x47c
  *(.dynstr)
- .dynstr        0x00000000000004a0       0xf4 /usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../../../lib/Scrt1.o
+ .dynstr        0x0000000000000ae8      0x47c /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.0/../../../../lib/Scrt1.o
 
-.gnu.version    0x0000000000000594       0x10
+.gnu.version    0x0000000000000f64       0x96
  *(.gnu.version)
- .gnu.version   0x0000000000000594       0x10 /usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../../../lib/Scrt1.o
+ .gnu.version   0x0000000000000f64       0x96 /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.0/../../../../lib/Scrt1.o
 
-.gnu.version_d  0x00000000000005a8        0x0
+.gnu.version_d  0x0000000000001000        0x0
  *(.gnu.version_d)
  .gnu.version_d
-                0x00000000000005a8        0x0 /usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../../../lib/Scrt1.o
+                0x0000000000001000        0x0 /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.0/../../../../lib/Scrt1.o
 
-.gnu.version_r  0x00000000000005a8       0x30
+.gnu.version_r  0x0000000000001000       0xc0
  *(.gnu.version_r)
  .gnu.version_r
-                0x00000000000005a8       0x30 /usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../../../lib/Scrt1.o
+                0x0000000000001000       0xc0 /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.0/../../../../lib/Scrt1.o
 
-.rela.dyn       0x00000000000005d8      0xd98
+.rela.dyn       0x00000000000010c0       0xf0
  *(.rela.init)
  *(.rela.text .rela.text.* .rela.gnu.linkonce.t.*)
  *(.rela.fini)
  *(.rela.rodata .rela.rodata.* .rela.gnu.linkonce.r.*)
  *(.rela.data .rela.data.* .rela.gnu.linkonce.d.*)
  .rela.data.rel.ro
-                0x00000000000005d8        0x0 /usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../../../lib/Scrt1.o
+                0x00000000000010c0        0x0 /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.0/../../../../lib/Scrt1.o
  .rela.data.rel.local
-                0x00000000000005d8      0xcd8 /usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../../../lib/Scrt1.o
+                0x00000000000010c0       0x18 /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.0/../../../../lib/Scrt1.o
+ .rela.data.rel.local.DW.ref.__gxx_personality_v0
+                0x00000000000010d8       0x18 /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.0/../../../../lib/Scrt1.o
  *(.rela.tdata .rela.tdata.* .rela.gnu.linkonce.td.*)
  *(.rela.tbss .rela.tbss.* .rela.gnu.linkonce.tb.*)
  *(.rela.ctors)
  *(.rela.dtors)
  *(.rela.got)
- .rela.got      0x00000000000012b0       0x90 /usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../../../lib/Scrt1.o
+ .rela.got      0x00000000000010f0       0x90 /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.0/../../../../lib/Scrt1.o
  *(.rela.bss .rela.bss.* .rela.gnu.linkonce.b.*)
- .rela.bss      0x0000000000001340        0x0 /usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../../../lib/Scrt1.o
+ .rela.bss      0x0000000000001180        0x0 /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.0/../../../../lib/Scrt1.o
  *(.rela.ldata .rela.ldata.* .rela.gnu.linkonce.l.*)
  *(.rela.lbss .rela.lbss.* .rela.gnu.linkonce.lb.*)
  *(.rela.lrodata .rela.lrodata.* .rela.gnu.linkonce.lr.*)
  *(.rela.ifunc)
- .rela.ifunc    0x0000000000001340        0x0 /usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../../../lib/Scrt1.o
+ .rela.ifunc    0x0000000000001180        0x0 /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.0/../../../../lib/Scrt1.o
  .rela.fini_array
-                0x0000000000001340       0x18 /usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../../../lib/Scrt1.o
+                0x0000000000001180       0x18 /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.0/../../../../lib/Scrt1.o
  .rela.init_array
-                0x0000000000001358       0x18 /usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../../../lib/Scrt1.o
+                0x0000000000001198       0x18 /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.0/../../../../lib/Scrt1.o
+ .rela.eh_frame
+                0x00000000000011b0        0x0 /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.0/../../../../lib/Scrt1.o
 
-.rela.plt       0x0000000000001370       0x18
+.rela.plt       0x00000000000011b0      0x648
  *(.rela.plt)
- .rela.plt      0x0000000000001370       0x18 /usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../../../lib/Scrt1.o
+ .rela.plt      0x00000000000011b0      0x648 /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.0/../../../../lib/Scrt1.o
  *(.rela.iplt)
 
 .relr.dyn
@@ -158,92 +201,472 @@ LOAD /usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../../../lib/crtn.o
 
 .init           0x0000000000002000       0x1b
  *(SORT_NONE(.init))
- .init          0x0000000000002000       0x16 /usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../../../lib/crti.o
+ .init          0x0000000000002000       0x16 /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.0/../../../../lib/crti.o
                 0x0000000000002000                _init
- .init          0x0000000000002016        0x5 /usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../../../lib/crtn.o
+ .init          0x0000000000002016        0x5 /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.0/../../../../lib/crtn.o
 
-.plt            0x0000000000002020       0x20
+.plt            0x0000000000002020      0x440
  *(.plt)
- .plt           0x0000000000002020       0x20 /usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../../../lib/Scrt1.o
-                0x0000000000002030                fprintf@@GLIBC_2.2.5
+ .plt           0x0000000000002020      0x440 /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.0/../../../../lib/Scrt1.o
+                0x0000000000002030                __printf_chk@@GLIBC_2.3.4
+                0x0000000000002040                printf@@GLIBC_2.2.5
+                0x0000000000002050                msync@@GLIBC_2.2.5
+                0x0000000000002060                RCS_CMD_CHANNEL::write(RCS_CMD_MSG*)
+                0x0000000000002070                strstr@@GLIBC_2.2.5
+                0x0000000000002080                CMS::update(PM_CARTESIAN&)
+                0x0000000000002090                NML::get_address()
+                0x00000000000020a0                fork@@GLIBC_2.2.5
+                0x00000000000020b0                write@@GLIBC_2.2.5
+                0x00000000000020c0                CMS::update(int*, unsigned int)
+                0x00000000000020d0                strlen@@GLIBC_2.2.5
+                0x00000000000020e0                unlink@@GLIBC_2.2.5
+                0x00000000000020f0                RCS_STAT_CHANNEL::RCS_STAT_CHANNEL(int (*)(int, void*, CMS*), char const*, char const*, char const*, int)
+                0x0000000000002100                strncpy@@GLIBC_2.2.5
+                0x0000000000002110                RCS_CMD_MSG::RCS_CMD_MSG(int, long)
+                0x0000000000002120                munmap@@GLIBC_2.2.5
+                0x0000000000002130                CMS::update(double&)
+                0x0000000000002140                __snprintf_chk@@GLIBC_2.3.4
+                0x0000000000002150                pipe2@@GLIBC_2.9
+                0x0000000000002160                strncat@@GLIBC_2.2.5
+                0x0000000000002170                RCS_CMD_CHANNEL::RCS_CMD_CHANNEL(int (*)(int, void*, CMS*), char const*, char const*, char const*, int)
+                0x0000000000002180                open@@GLIBC_2.2.5
+                0x0000000000002190                NML::read()
+                0x00000000000021a0                waitpid@@GLIBC_2.2.5
+                0x00000000000021b0                perror@@GLIBC_2.2.5
+                0x00000000000021c0                __strcpy_chk@@GLIBC_2.3.4
+                0x00000000000021d0                execv@@GLIBC_2.2.5
+                0x00000000000021e0                dup2@@GLIBC_2.2.5
+                0x00000000000021f0                strcpy@@GLIBC_2.2.5
+                0x0000000000002200                select@@GLIBC_2.2.5
+                0x0000000000002210                __isoc99_sscanf@@GLIBC_2.7
+                0x0000000000002220                fclose@@GLIBC_2.2.5
+                0x0000000000002230                CMS::update(unsigned int&)
+                0x0000000000002240                CMS::update(bool&)
+                0x0000000000002250                __stack_chk_fail@@GLIBC_2.4
+                0x0000000000002260                fputs@@GLIBC_2.2.5
+                0x0000000000002270                fopen@@GLIBC_2.2.5
+                0x0000000000002280                signal@@GLIBC_2.2.5
+                0x0000000000002290                exit@@GLIBC_2.2.5
+                0x00000000000022a0                getenv@@GLIBC_2.2.5
+                0x00000000000022b0                CMS::update(int&)
+                0x00000000000022c0                NML::operator new(unsigned long)
+                0x00000000000022d0                usleep@@GLIBC_2.2.5
+                0x00000000000022e0                NML::valid()
+                0x00000000000022f0                read@@GLIBC_2.2.5
+                0x0000000000002300                getpid@@GLIBC_2.2.5
+                0x0000000000002310                poll@@GLIBC_2.2.5
+                0x0000000000002320                feof@@GLIBC_2.2.5
+                0x0000000000002330                strtok@@GLIBC_2.2.5
+                0x0000000000002340                fgets@@GLIBC_2.2.5
+                0x0000000000002350                CMS::update(unsigned char&)
+                0x0000000000002360                snprintf@@GLIBC_2.2.5
+                0x0000000000002370                __fprintf_chk@@GLIBC_2.3.4
+                0x0000000000002380                access@@GLIBC_2.2.5
+                0x0000000000002390                NML::operator delete(void*)
+                0x00000000000023a0                _Unwind_Resume@@GCC_3.0
+                0x00000000000023b0                CMS::update(char*, unsigned int)
+                0x00000000000023c0                mmap@@GLIBC_2.2.5
+                0x00000000000023d0                NML::NML(int (*)(int, void*, CMS*), char const*, char const*, char const*, int, int)
+                0x00000000000023e0                RCS_STAT_MSG::RCS_STAT_MSG(int, unsigned long)
+                0x00000000000023f0                CMS::update(double*, unsigned int)
+                0x0000000000002400                toupper@@GLIBC_2.2.5
+                0x0000000000002410                lseek@@GLIBC_2.2.5
+                0x0000000000002420                secure_getenv@@GLIBC_2.17
+                0x0000000000002430                NML::peek()
+                0x0000000000002440                fwrite@@GLIBC_2.2.5
+                0x0000000000002450                close@@GLIBC_2.2.5
  *(.iplt)
 
-.plt.got        0x0000000000002040        0x0
+.plt.got        0x0000000000002460        0x0
  *(.plt.got)
- .plt.got       0x0000000000002040        0x0 /usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../../../lib/Scrt1.o
+ .plt.got       0x0000000000002460        0x0 /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.0/../../../../lib/Scrt1.o
 
 .plt.sec
  *(.plt.sec)
 
-.text           0x0000000000002040      0x139
+.text           0x0000000000002460     0x6f67
  *(.text.unlikely .text.*_unlikely .text.unlikely.*)
  *(.text.exit .text.exit.*)
  *(.text.startup .text.startup.*)
- .text.startup  0x0000000000002040       0x3d dumpBufDesc.o
-                0x0000000000002040                main
+ .text.startup  0x0000000000002460      0x174 TestNML.o
+                0x0000000000002460                main
  *(.text.hot .text.hot.*)
  *(SORT_BY_NAME(.text.sorted.*))
  *(.text .stub .text.* .gnu.linkonce.t.*)
- *fill*         0x000000000000207d        0x3 
- .text          0x0000000000002080       0x26 /usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../../../lib/Scrt1.o
-                0x0000000000002080                _start
- .text          0x00000000000020a6        0x0 /usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../../../lib/crti.o
- *fill*         0x00000000000020a6        0xa 
- .text          0x00000000000020b0       0xc9 /usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/crtbeginS.o
- .text          0x0000000000002179        0x0 dumpBufDesc.o
- .text          0x0000000000002179        0x0 /usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/crtendS.o
- .text          0x0000000000002179        0x0 /usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../../../lib/crtn.o
+ *fill*         0x00000000000025d4        0xc 
+ .text          0x00000000000025e0       0x26 /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.0/../../../../lib/Scrt1.o
+                0x00000000000025e0                _start
+ .text          0x0000000000002606        0x0 /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.0/../../../../lib/crti.o
+ *fill*         0x0000000000002606        0xa 
+ .text          0x0000000000002610       0xc9 /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.0/crtbeginS.o
+ .text          0x00000000000026d9      0xb2d TestNML.o
+                0x00000000000026d9                sleep(double)
+                0x0000000000002735                init()
+                0x0000000000002903                fetchMessage(char*)
+                0x0000000000002956                sendCommand(RCS_CMD_MSG&)
+                0x00000000000029bc                clearEStop()
+                0x0000000000002a11                machineOn()
+                0x0000000000002a66                homeAxis(int)
+                0x0000000000002abb                jogStep(int, double, double)
+                0x0000000000002b3a                jogStart(int, double)
+                0x0000000000002ba9                jogStop(int)
+                0x0000000000002c06                loadTaskPlan(char const*)
+                0x0000000000002c9f                sendMDICommand(char const*)
+                0x0000000000002d0a                setAuto(int, int)
+                0x0000000000002dbd                setBlockDelete(int)
+                0x0000000000002e15                setFeedOverride(double)
+                0x0000000000002e80                setFlood(int)
+                0x0000000000002ed6                setMist(int)
+                0x0000000000002f2c                setOptionalStop(int)
+                0x0000000000002f84                setRapidOverride(double)
+                0x0000000000002fef                setSpindle(int, int, int)
+                0x000000000000308f                setSpindleOverride(double)
+                0x000000000000310f                setTaskMode(int)
+                0x0000000000003164                setTaskState(int)
+                0x00000000000031b9                taskAbort()
+ *fill*         0x0000000000003206        0xa 
+ .text          0x0000000000003210     0x2c7d /home/dragos/Apps/linuxcnc/src/objects/emc/nml_intf/emc.o
+                0x0000000000003210                emc_symbol_lookup(unsigned int)
+                0x0000000000003880                EMC_SPINDLE_STAT_MSG::update(CMS*)
+                0x0000000000003890                EMC_CMD_MSG::update(CMS*)
+                0x00000000000038a0                EMC_OPERATOR_DISPLAY::update(CMS*)
+                0x00000000000038d0                EMC_SYSTEM_CMD::update(CMS*)
+                0x00000000000038f0                EMC_SPINDLE_CMD_MSG::update(CMS*)
+                0x0000000000003900                EMC_SPINDLE_CONSTANT::update(CMS*)
+                0x0000000000003930                EMC_LUBE_CMD_MSG::update(CMS*)
+                0x0000000000003940                EMC_SPINDLE_OFF::update(CMS*)
+                0x0000000000003950                EMC_COOLANT_CMD_MSG::update(CMS*)
+                0x0000000000003960                PmCartesian_update(CMS*, PmCartesian*)
+                0x0000000000003990                EMC_TASK_STAT_MSG::update(CMS*)
+                0x00000000000039a0                EMC_IO_CMD_MSG::update(CMS*)
+                0x00000000000039b0                EMC_JOINT_CMD_MSG::update(CMS*)
+                0x00000000000039c0                EMC_JOINT_SET_UNITS::update(CMS*)
+                0x00000000000039f0                EMC_JOINT_DEACTIVATE::update(CMS*)
+                0x0000000000003a00                EMC_JOINT_OVERRIDE_LIMITS::update(CMS*)
+                0x0000000000003a10                EMC_JOINT_SET_MIN_POSITION_LIMIT::update(CMS*)
+                0x0000000000003a40                EMC_JOINT_SET_FERROR::update(CMS*)
+                0x0000000000003a70                EMC_JOG_CMD_MSG::update(CMS*)
+                0x0000000000003a80                EMC_JOG_STOP::update(CMS*)
+                0x0000000000003a90                EMC_JOG_ABS::update(CMS*)
+                0x0000000000003ac0                EMC_IO_INIT::update(CMS*)
+                0x0000000000003ad0                EMC_JOG_CONT::update(CMS*)
+                0x0000000000003b00                CANON_VECTOR_update(CMS*, CANON_VECTOR*)
+                0x0000000000003b30                EMC_COOLANT_STAT_MSG::update(CMS*)
+                0x0000000000003b40                EMC_JOINT_SET_JOINT::update(CMS*)
+                0x0000000000003b70                EMC_SPINDLE_STAT::update(CMS*)
+                0x0000000000003bf0                EMC_JOINT_SET_MAX_POSITION_LIMIT::update(CMS*)
+                0x0000000000003c20                EMC_COOLANT_MIST_ON::update(CMS*)
+                0x0000000000003c30                EMC_TOOL_CMD_MSG::update(CMS*)
+                0x0000000000003c40                EMC_TOOL_PREPARE::update(CMS*)
+                0x0000000000003c70                EMC_TOOL_INIT::update(CMS*)
+                0x0000000000003c80                EMC_TOOL_LOAD::update(CMS*)
+                0x0000000000003c90                EMC_TOOL_START_CHANGE::update(CMS*)
+                0x0000000000003ca0                EMC_TOOL_SET_NUMBER::update(CMS*)
+                0x0000000000003cd0                EMC_TASK_CMD_MSG::update(CMS*)
+                0x0000000000003ce0                EMC_TASK_PLAN_RUN::update(CMS*)
+                0x0000000000003d10                EMC_TASK_PLAN_SYNCH::update(CMS*)
+                0x0000000000003d20                EMC_TASK_ABORT::update(CMS*)
+                0x0000000000003d30                EMC_TASK_PLAN_INIT::update(CMS*)
+                0x0000000000003d40                EMC_TASK_PLAN_CLOSE::update(CMS*)
+                0x0000000000003d50                EMC_TASK_PLAN_RESUME::update(CMS*)
+                0x0000000000003d60                EMC_TRAJ_STAT_MSG::update(CMS*)
+                0x0000000000003d70                EMC_IO_HALT::update(CMS*)
+                0x0000000000003d80                EMC_OPERATOR_TEXT::update(CMS*)
+                0x0000000000003db0                EMC_COOLANT_MIST_OFF::update(CMS*)
+                0x0000000000003dc0                EMC_TASK_PLAN_READ::update(CMS*)
+                0x0000000000003dd0                EMC_TOOL_HALT::update(CMS*)
+                0x0000000000003de0                EMC_SPINDLE_DECREASE::update(CMS*)
+                0x0000000000003e10                EMC_IO_STAT_MSG::update(CMS*)
+                0x0000000000003e20                EMC_ABORT::update(CMS*)
+                0x0000000000003e30                EMC_EXEC_PLUGIN_CALL::update(CMS*)
+                0x0000000000003e70                EMC_IO_PLUGIN_CALL::update(CMS*)
+                0x0000000000003eb0                EMC_TOOL_STAT_MSG::update(CMS*)
+                0x0000000000003ec0                EMC_TOOL_STAT::update(CMS*)
+                0x0000000000003f00                EMC_AXIS_STAT_MSG::update(CMS*)
+                0x0000000000003f10                EMC_AXIS_STAT::update(CMS*)
+                0x0000000000003f40                EMC_INIT::update(CMS*)
+                0x0000000000003f50                EMC_IO_ABORT::update(CMS*)
+                0x0000000000003f60                EMC_TOOL_ABORT::update(CMS*)
+                0x0000000000003f70                EMC_TOOL_LOAD_TOOL_TABLE::update(CMS*)
+                0x0000000000003fa0                EMC_TASK_SET_STATE::update(CMS*)
+                0x0000000000003fd0                EMC_SPINDLE_BRAKE_RELEASE::update(CMS*)
+                0x0000000000003fe0                EMC_JOINT_STAT_MSG::update(CMS*)
+                0x0000000000003ff0                EMC_JOINT_STAT::update(CMS*)
+                0x0000000000004150                EMC_JOINT_LOAD_COMP::update(CMS*)
+                0x0000000000004190                EMC_STAT_MSG::update(CMS*)
+                0x00000000000041a0                EMC_TASK_SET_MODE::update(CMS*)
+                0x00000000000041d0                EMC_JOG_INCR::update(CMS*)
+                0x0000000000004200                EMC_JOINT_ACTIVATE::update(CMS*)
+                0x0000000000004210                EMC_SPINDLE_ON::update(CMS*)
+                0x0000000000004260                EMC_SPINDLE_SPEED::update(CMS*)
+                0x00000000000042a0                EMC_SPINDLE_ORIENT::update(CMS*)
+                0x00000000000042d0                EMC_SPINDLE_WAIT_ORIENT_COMPLETE::update(CMS*)
+                0x0000000000004300                EMC_TASK_PLAN_END::update(CMS*)
+                0x0000000000004310                EMC_JOINT_ABORT::update(CMS*)
+                0x0000000000004320                EMC_TRAJ_CMD_MSG::update(CMS*)
+                0x0000000000004330                EMC_TRAJ_SET_CYCLE_TIME::update(CMS*)
+                0x0000000000004360                EMC_TRAJ_SET_TERM_COND::update(CMS*)
+                0x0000000000004390                EMC_TRAJ_SET_SPINDLESYNC::update(CMS*)
+                0x00000000000043c0                EMC_TRAJ_SET_SPINDLE_SCALE::update(CMS*)
+                0x00000000000043f0                EMC_TRAJ_SET_FO_ENABLE::update(CMS*)
+                0x0000000000004420                EMC_TRAJ_SET_SO_ENABLE::update(CMS*)
+                0x0000000000004450                EMC_TRAJ_SET_AXES::update(CMS*)
+                0x0000000000004480                EMC_TRAJ_SET_UNITS::update(CMS*)
+                0x00000000000044b0                EMC_TRAJ_ENABLE::update(CMS*)
+                0x00000000000044c0                EMC_TRAJ_CLEAR_PROBE_TRIPPED_FLAG::update(CMS*)
+                0x00000000000044d0                EMC_TRAJ_STEP::update(CMS*)
+                0x00000000000044e0                EMC_TRAJ_HALT::update(CMS*)
+                0x00000000000044f0                EMC_TRAJ_RESUME::update(CMS*)
+                0x0000000000004500                EMC_TRAJ_ABORT::update(CMS*)
+                0x0000000000004510                EMC_TRAJ_SET_FH_ENABLE::update(CMS*)
+                0x0000000000004540                EMC_TRAJ_SET_MOTION_ID::update(CMS*)
+                0x0000000000004570                EMC_TRAJ_SET_VELOCITY::update(CMS*)
+                0x00000000000045a0                EMC_TRAJ_SET_SCALE::update(CMS*)
+                0x00000000000045d0                EMC_TRAJ_SET_RAPID_SCALE::update(CMS*)
+                0x0000000000004600                EMC_TRAJ_DELAY::update(CMS*)
+                0x0000000000004630                EMC_TRAJ_SET_ACCELERATION::update(CMS*)
+                0x0000000000004660                EMC_OPERATOR_ERROR::update(CMS*)
+                0x0000000000004690                EMC_JOINT_SET_MAX_VELOCITY::update(CMS*)
+                0x00000000000046c0                EMC_SET_DEBUG::update(CMS*)
+                0x00000000000046d0                EMC_HALT::update(CMS*)
+                0x00000000000046e0                EMC_TASK_PLAN_STEP::update(CMS*)
+                0x00000000000046f0                EMC_JOINT_DISABLE::update(CMS*)
+                0x0000000000004700                EMC_JOINT_SET_BACKLASH::update(CMS*)
+                0x0000000000004730                EMC_TRAJ_SET_ROTATION::update(CMS*)
+                0x0000000000004760                EMC_SPINDLE_BRAKE_ENGAGE::update(CMS*)
+                0x0000000000004770                EMC_JOINT_HOME::update(CMS*)
+                0x0000000000004780                EMC_JOINT_UNHOME::update(CMS*)
+                0x0000000000004790                EMC_JOINT_INIT::update(CMS*)
+                0x00000000000047a0                EMC_JOINT_ENABLE::update(CMS*)
+                0x00000000000047b0                EMC_TRAJ_SET_MAX_ACCELERATION::update(CMS*)
+                0x00000000000047e0                EMC_LUBE_STAT_MSG::update(CMS*)
+                0x00000000000047f0                EMC_LUBE_STAT::update(CMS*)
+                0x0000000000004820                EMC_SPINDLE_INCREASE::update(CMS*)
+                0x0000000000004850                EMC_TASK_INIT::update(CMS*)
+                0x0000000000004860                EMC_AUX_CMD_MSG::update(CMS*)
+                0x0000000000004870                EMC_AUX_ESTOP_RESET::update(CMS*)
+                0x0000000000004880                EMC_AUX_ESTOP_OFF::update(CMS*)
+                0x0000000000004890                EMC_JOINT_SET_MIN_FERROR::update(CMS*)
+                0x00000000000048c0                EMC_AUX_ESTOP_ON::update(CMS*)
+                0x00000000000048d0                EMC_NULL::update(CMS*)
+                0x00000000000048e0                EMC_COOLANT_FLOOD_OFF::update(CMS*)
+                0x00000000000048f0                EmcPose_update(CMS*, EmcPose*)
+                0x0000000000004950                EMC_TOOL_SET_OFFSET::update(CMS*)
+                0x00000000000049c0                EMC_TRAJ_LINEAR_MOVE::update(CMS*)
+                0x0000000000004a40                EMC_TRAJ_CIRCULAR_MOVE::update(CMS*)
+                0x0000000000004ae0                CANON_TOOL_TABLE_update(CMS*, CANON_TOOL_TABLE*)
+                0x0000000000004b30                EMC_TASK_STAT::update(CMS*)
+                0x0000000000004cc0                EMC_TRAJ_SET_OFFSET::update(CMS*)
+                0x0000000000004cf0                EMC_TRAJ_SET_G5X::update(CMS*)
+                0x0000000000004d20                EMC_TRAJ_STAT::update(CMS*)
+                0x0000000000004eb0                EMC_TRAJ_SET_HOME::update(CMS*)
+                0x0000000000004ee0                EMC_TRAJ_SET_G92::update(CMS*)
+                0x0000000000004f10                EMC_TRAJ_PAUSE::update(CMS*)
+                0x0000000000004f20                EMC_AUX_STAT_MSG::update(CMS*)
+                0x0000000000004f30                EMC_AUX_STAT::update(CMS*)
+                0x0000000000004f60                EMC_TRAJ_SET_MAX_VELOCITY::update(CMS*)
+                0x0000000000004f90                EMC_TASK_PLAN_OPEN::update(CMS*)
+                0x0000000000004fc0                EMC_JOINT_SET_HOMING_PARAMS::update(CMS*)
+                0x0000000000005050                EMC_TRAJ_SET_MODE::update(CMS*)
+                0x0000000000005080                EMC_TASK_PLAN_EXECUTE::update(CMS*)
+                0x00000000000050b0                EMC_COOLANT_FLOOD_ON::update(CMS*)
+                0x00000000000050c0                EMC_COOLANT_STAT::update(CMS*)
+                0x00000000000050f0                EMC_IO_STAT::update(CMS*)
+                0x0000000000005160                EMC_TRAJ_SET_TELEOP_ENABLE::update(CMS*)
+                0x0000000000005190                CANON_POSITION_update(CMS*, CANON_POSITION*)
+                0x00000000000051f0                EMC_JOINT_HALT::update(CMS*)
+                0x0000000000005200                EMC_TASK_PLAN_PAUSE::update(CMS*)
+                0x0000000000005210                EMC_TASK_PLAN_SET_OPTIONAL_STOP::update(CMS*)
+                0x0000000000005240                EMC_TASK_PLAN_SET_BLOCK_DELETE::update(CMS*)
+                0x0000000000005270                EMC_TASK_PLAN_OPTIONAL_STOP::update(CMS*)
+                0x0000000000005280                EMC_MOTION_STAT_MSG::update(CMS*)
+                0x0000000000005290                EMC_MOTION_STAT::update(CMS*)
+                0x00000000000052f0                EMC_STAT::update(CMS*)
+                0x0000000000005340                EMC_TASK_HALT::update(CMS*)
+                0x0000000000005350                EMC_TRAJ_PROBE::update(CMS*)
+                0x00000000000053c0                EMC_AUX_INPUT_WAIT::update(CMS*)
+                0x0000000000005410                EMC_TRAJ_RIGID_TAP::update(CMS*)
+                0x0000000000005460                EMC_LUBE_OFF::update(CMS*)
+                0x0000000000005470                EMC_LUBE_ON::update(CMS*)
+                0x0000000000005480                EMC_TRAJ_INIT::update(CMS*)
+                0x0000000000005490                EMC_TRAJ_DISABLE::update(CMS*)
+                0x00000000000054a0                EMC_TOOL_UNLOAD::update(CMS*)
+                0x00000000000054b0                EMC_MOTION_CMD_MSG::update(CMS*)
+                0x00000000000054c0                EMC_MOTION_INIT::update(CMS*)
+                0x00000000000054d0                EMC_MOTION_SET_AOUT::update(CMS*)
+                0x0000000000005520                EMC_MOTION_SET_DOUT::update(CMS*)
+                0x0000000000005570                EMC_MOTION_ADAPTIVE::update(CMS*)
+                0x00000000000055a0                EMC_MOTION_ABORT::update(CMS*)
+                0x00000000000055b0                EMC_MOTION_HALT::update(CMS*)
+                0x00000000000055c0                EMC_IO_SET_CYCLE_TIME::update(CMS*)
+                0x00000000000055f0                emcFormat(int, void*, CMS*)
+ *fill*         0x0000000000005e8d        0x3 
+ .text          0x0000000000005e90      0x7f9 /home/dragos/Apps/linuxcnc/src/objects/emc/nml_intf/emcops.o
+                0x0000000000005e90                EMC_AXIS_STAT::EMC_AXIS_STAT()
+                0x0000000000005e90                EMC_AXIS_STAT::EMC_AXIS_STAT()
+                0x0000000000005ea0                EMC_JOINT_STAT::EMC_JOINT_STAT()
+                0x0000000000005ea0                EMC_JOINT_STAT::EMC_JOINT_STAT()
+                0x0000000000005f20                EMC_TRAJ_STAT::EMC_TRAJ_STAT()
+                0x0000000000005f20                EMC_TRAJ_STAT::EMC_TRAJ_STAT()
+                0x0000000000006080                EMC_TASK_STAT::EMC_TASK_STAT()
+                0x0000000000006080                EMC_TASK_STAT::EMC_TASK_STAT()
+                0x00000000000061d0                EMC_TOOL_STAT::EMC_TOOL_STAT()
+                0x00000000000061d0                EMC_TOOL_STAT::EMC_TOOL_STAT()
+                0x0000000000006280                EMC_AUX_STAT::EMC_AUX_STAT()
+                0x0000000000006280                EMC_AUX_STAT::EMC_AUX_STAT()
+                0x00000000000062a0                EMC_SPINDLE_STAT::EMC_SPINDLE_STAT()
+                0x00000000000062a0                EMC_SPINDLE_STAT::EMC_SPINDLE_STAT()
+                0x00000000000062e0                EMC_MOTION_STAT::EMC_MOTION_STAT()
+                0x00000000000062e0                EMC_MOTION_STAT::EMC_MOTION_STAT()
+                0x0000000000006400                EMC_COOLANT_STAT::EMC_COOLANT_STAT()
+                0x0000000000006400                EMC_COOLANT_STAT::EMC_COOLANT_STAT()
+                0x0000000000006420                EMC_LUBE_STAT::EMC_LUBE_STAT()
+                0x0000000000006420                EMC_LUBE_STAT::EMC_LUBE_STAT()
+                0x0000000000006440                EMC_TOOL_STAT::operator=(EMC_TOOL_STAT)
+                0x0000000000006610                EMC_STAT::EMC_STAT()
+                0x0000000000006610                EMC_STAT::EMC_STAT()
+ *fill*         0x0000000000006689        0x7 
+ .text          0x0000000000006690       0xae /home/dragos/Apps/linuxcnc/src/objects/emc/rs274ngc/modal_state.o
+                0x0000000000006690                StateTag::StateTag()
+                0x0000000000006690                StateTag::StateTag()
+                0x00000000000066c0                StateTag::StateTag(state_tag_t const&)
+                0x00000000000066c0                StateTag::StateTag(state_tag_t const&)
+                0x00000000000066f0                StateTag::is_valid() const
+                0x0000000000006710                StateTag::get_state_tag() const
+ *fill*         0x000000000000673e        0x2 
+ .text          0x0000000000006740     0x161c /home/dragos/Apps/linuxcnc/src/objects/emc/tooldata/tooldata_common.o
+                0x0000000000006740                tooldata_init(bool)
+                0x0000000000006750                tooldata_entry_init()
+                0x0000000000006790                tooldata_set_db(tooldb_t)
+                0x00000000000067a0                tooldata_add_init(int)
+                0x00000000000067b0                tooldata_read_entry(char const*, char**)
+                0x0000000000006e00                tooldata_format_toolline(int, bool, CANON_TOOL_TABLE, char**, char*)
+                0x00000000000079b0                tooldata_load(char const*, char**)
+                0x0000000000007c70                tooldata_save(char const*, char**)
+ *fill*         0x0000000000007d5c        0x4 
+ .text          0x0000000000007d60      0x9aa /home/dragos/Apps/linuxcnc/src/objects/emc/tooldata/tooldata_mmap.o
+                0x0000000000007e00                tool_mmap_is_random_toolchanger()
+                0x0000000000007e30                tool_mmap_creator(EMC_TOOL_STAT const*, int)
+                0x0000000000008000                tool_mmap_user()
+                0x0000000000008100                tool_mmap_close()
+                0x0000000000008220                tooldata_last_index_set(int)
+                0x00000000000082a0                tooldata_last_index_get()
+                0x00000000000082e0                tooldata_put(CANON_TOOL_TABLE, int)
+                0x0000000000008470                tooldata_reset()
+                0x0000000000008520                tooldata_get(CANON_TOOL_TABLE*, int)
+                0x0000000000008670                tooldata_find_index_for_tool(int)
+ *fill*         0x000000000000870a        0x6 
+ .text          0x0000000000008710      0xcb7 /home/dragos/Apps/linuxcnc/src/objects/emc/tooldata/tooldata_db.o
+                0x0000000000008a40                tooldata_db_getall()
+                0x0000000000008bc0                tooldata_db_init(char*, int)
+                0x0000000000008f60                tooldata_db_notify(tool_notify_t, int, int, CANON_TOOL_TABLE)
+ .text          0x00000000000093c7        0x0 /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.0/crtendS.o
+ .text          0x00000000000093c7        0x0 /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.0/../../../../lib/crtn.o
  *(.gnu.warning)
 
-.fini           0x000000000000217c        0xd
+.fini           0x00000000000093c8        0xd
  *(SORT_NONE(.fini))
- .fini          0x000000000000217c        0x8 /usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../../../lib/crti.o
-                0x000000000000217c                _fini
- .fini          0x0000000000002184        0x5 /usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../../../lib/crtn.o
+ .fini          0x00000000000093c8        0x8 /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.0/../../../../lib/crti.o
+                0x00000000000093c8                _fini
+ .fini          0x00000000000093d0        0x5 /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.0/../../../../lib/crtn.o
                 [!provide]                        PROVIDE (__etext = .)
                 [!provide]                        PROVIDE (_etext = .)
                 [!provide]                        PROVIDE (etext = .)
-                0x0000000000003000                . = ALIGN (CONSTANT (MAXPAGESIZE))
-                0x0000000000003000                . = SEGMENT_START ("rodata-segment", (ALIGN (CONSTANT (MAXPAGESIZE)) + (. & (CONSTANT (MAXPAGESIZE) - 0x1))))
+                0x000000000000a000                . = ALIGN (CONSTANT (MAXPAGESIZE))
+                0x000000000000a000                . = SEGMENT_START ("rodata-segment", (ALIGN (CONSTANT (MAXPAGESIZE)) + (. & (CONSTANT (MAXPAGESIZE) - 0x1))))
 
-.rodata         0x0000000000003000      0xd55
+.rodata         0x000000000000a000     0x2e9e
  *(.rodata .rodata.* .gnu.linkonce.r.*)
- .rodata.cst4   0x0000000000003000        0x4 /usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../../../lib/Scrt1.o
-                0x0000000000003000                _IO_stdin_used
+ .rodata.cst4   0x000000000000a000        0x4 /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.0/../../../../lib/Scrt1.o
+                0x000000000000a000                _IO_stdin_used
  .rodata.str1.1
-                0x0000000000003004      0xd51 dumpBufDesc.o
+                0x000000000000a004      0x102 TestNML.o
+ *fill*         0x000000000000a106        0x2 
+ .rodata        0x000000000000a108       0x18 TestNML.o
+ .rodata.cst8   0x000000000000a120       0x10 TestNML.o
+ .rodata.str1.1
+                0x000000000000a130      0x9b3 /home/dragos/Apps/linuxcnc/src/objects/emc/nml_intf/emc.o
+ *fill*         0x000000000000aae3        0x5 
+ .rodata.str1.8
+                0x000000000000aae8       0xda /home/dragos/Apps/linuxcnc/src/objects/emc/nml_intf/emc.o
+ *fill*         0x000000000000abc2        0x2 
+ .rodata        0x000000000000abc4     0x1968 /home/dragos/Apps/linuxcnc/src/objects/emc/nml_intf/emc.o
+ .rodata.str1.1
+                0x000000000000c52c       0x2d /home/dragos/Apps/linuxcnc/src/objects/emc/nml_intf/emcops.o
+ *fill*         0x000000000000c559        0x7 
+ .rodata.cst16  0x000000000000c560       0x50 /home/dragos/Apps/linuxcnc/src/objects/emc/nml_intf/emcops.o
+ .rodata.cst8   0x000000000000c5b0        0x8 /home/dragos/Apps/linuxcnc/src/objects/emc/nml_intf/emcops.o
+ .rodata.cst2   0x000000000000c5b8        0x2 /home/dragos/Apps/linuxcnc/src/objects/emc/nml_intf/emcops.o
+ *fill*         0x000000000000c5ba        0x6 
+ .rodata.str1.8
+                0x000000000000c5c0      0x16b /home/dragos/Apps/linuxcnc/src/objects/emc/tooldata/tooldata_common.o
+ .rodata.str1.1
+                0x000000000000c72b      0x11e /home/dragos/Apps/linuxcnc/src/objects/emc/tooldata/tooldata_common.o
+                                        0x125 (size before relaxing)
+ *fill*         0x000000000000c849        0x3 
+ .rodata        0x000000000000c84c       0x68 /home/dragos/Apps/linuxcnc/src/objects/emc/tooldata/tooldata_common.o
+ *fill*         0x000000000000c8b4        0x4 
+ .rodata.cst8   0x000000000000c8b8        0x8 /home/dragos/Apps/linuxcnc/src/objects/emc/tooldata/tooldata_common.o
+ .rodata.str1.1
+                0x000000000000c8c0       0xc5 /home/dragos/Apps/linuxcnc/src/objects/emc/tooldata/tooldata_mmap.o
+                                         0xdc (size before relaxing)
+ *fill*         0x000000000000c985        0x3 
+ .rodata.str1.8
+                0x000000000000c988      0x1fc /home/dragos/Apps/linuxcnc/src/objects/emc/tooldata/tooldata_mmap.o
+ .rodata        0x000000000000cb84        0x2 /home/dragos/Apps/linuxcnc/src/objects/emc/tooldata/tooldata_mmap.o
+ .rodata.str1.1
+                0x000000000000cb86      0x164 /home/dragos/Apps/linuxcnc/src/objects/emc/tooldata/tooldata_db.o
+                                        0x181 (size before relaxing)
+ *fill*         0x000000000000ccea        0x6 
+ .rodata.str1.8
+                0x000000000000ccf0      0x1ae /home/dragos/Apps/linuxcnc/src/objects/emc/tooldata/tooldata_db.o
 
 .rodata1
  *(.rodata1)
 
-.eh_frame_hdr   0x0000000000003d58       0x24
+.eh_frame_hdr   0x000000000000cea0      0x7a4
  *(.eh_frame_hdr)
- .eh_frame_hdr  0x0000000000003d58       0x24 /usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../../../lib/Scrt1.o
-                0x0000000000003d58                __GNU_EH_FRAME_HDR
+ .eh_frame_hdr  0x000000000000cea0      0x7a4 /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.0/../../../../lib/Scrt1.o
+                0x000000000000cea0                __GNU_EH_FRAME_HDR
  *(.eh_frame_entry .eh_frame_entry.*)
 
-.eh_frame       0x0000000000003d80       0x84
+.eh_frame       0x000000000000d648     0x1f84
  *(.eh_frame)
- .eh_frame      0x0000000000003d80       0x30 /usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../../../lib/Scrt1.o
+ .eh_frame      0x000000000000d648       0x30 /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.0/../../../../lib/Scrt1.o
                                          0x2c (size before relaxing)
- *fill*         0x0000000000003db0        0x0 
- .eh_frame      0x0000000000003db0       0x28 /usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../../../lib/Scrt1.o
+ *fill*         0x000000000000d678        0x0 
+ .eh_frame      0x000000000000d678       0x28 /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.0/../../../../lib/Scrt1.o
                                          0x40 (size before relaxing)
- .eh_frame      0x0000000000003dd8        0x0 /usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../../../lib/Scrt1.o
- .eh_frame      0x0000000000003dd8       0x28 dumpBufDesc.o
-                                         0x40 (size before relaxing)
- .eh_frame      0x0000000000003e00        0x4 /usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/crtendS.o
+ .eh_frame      0x000000000000d6a0        0x0 /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.0/../../../../lib/Scrt1.o
+ .eh_frame      0x000000000000d6a0      0x400 TestNML.o
+                                        0x418 (size before relaxing)
+ .eh_frame      0x000000000000daa0     0x1478 /home/dragos/Apps/linuxcnc/src/objects/emc/nml_intf/emc.o
+                                       0x1490 (size before relaxing)
+ .eh_frame      0x000000000000ef18      0x178 /home/dragos/Apps/linuxcnc/src/objects/emc/nml_intf/emcops.o
+                                        0x190 (size before relaxing)
+ .eh_frame      0x000000000000f090       0x50 /home/dragos/Apps/linuxcnc/src/objects/emc/rs274ngc/modal_state.o
+                                         0x68 (size before relaxing)
+ .eh_frame      0x000000000000f0e0      0x1d8 /home/dragos/Apps/linuxcnc/src/objects/emc/tooldata/tooldata_common.o
+                                        0x1f0 (size before relaxing)
+ .eh_frame      0x000000000000f2b8      0x1d0 /home/dragos/Apps/linuxcnc/src/objects/emc/tooldata/tooldata_mmap.o
+                                        0x1e8 (size before relaxing)
+ .eh_frame      0x000000000000f488      0x140 /home/dragos/Apps/linuxcnc/src/objects/emc/tooldata/tooldata_db.o
+                                        0x158 (size before relaxing)
+ .eh_frame      0x000000000000f5c8        0x4 /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.0/crtendS.o
  *(.eh_frame.*)
 
 .gcc_except_table
+                0x000000000000f5cc       0x2c
  *(.gcc_except_table .gcc_except_table.*)
+ .gcc_except_table
+                0x000000000000f5cc       0x2c TestNML.o
 
 .gnu_extab
  *(.gnu_extab*)
 
 .exception_ranges
  *(.exception_ranges*)
-                0x0000000000005d80                . = DATA_SEGMENT_ALIGN (CONSTANT (MAXPAGESIZE), CONSTANT (COMMONPAGESIZE))
+                0x0000000000010d68                . = DATA_SEGMENT_ALIGN (CONSTANT (MAXPAGESIZE), CONSTANT (COMMONPAGESIZE))
 
 .eh_frame
  *(.eh_frame)
@@ -258,7 +681,7 @@ LOAD /usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../../../lib/crtn.o
 .exception_ranges
  *(.exception_ranges*)
 
-.tdata          0x0000000000005d80        0x0
+.tdata          0x0000000000010d68        0x0
                 [!provide]                        PROVIDE (__tdata_start = .)
  *(.tdata .tdata.* .gnu.linkonce.td.*)
 
@@ -266,23 +689,23 @@ LOAD /usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../../../lib/crtn.o
  *(.tbss .tbss.* .gnu.linkonce.tb.*)
  *(.tcommon)
 
-.preinit_array  0x0000000000005d80        0x0
+.preinit_array  0x0000000000010d68        0x0
                 [!provide]                        PROVIDE (__preinit_array_start = .)
  *(.preinit_array)
                 [!provide]                        PROVIDE (__preinit_array_end = .)
 
-.init_array     0x0000000000005d80        0x8
+.init_array     0x0000000000010d68        0x8
                 [!provide]                        PROVIDE (__init_array_start = .)
  *(SORT_BY_INIT_PRIORITY(.init_array.*) SORT_BY_INIT_PRIORITY(.ctors.*))
  *(.init_array EXCLUDE_FILE(*crtend?.o *crtend.o *crtbegin?.o *crtbegin.o) .ctors)
- .init_array    0x0000000000005d80        0x8 /usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/crtbeginS.o
+ .init_array    0x0000000000010d68        0x8 /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.0/crtbeginS.o
                 [!provide]                        PROVIDE (__init_array_end = .)
 
-.fini_array     0x0000000000005d88        0x8
+.fini_array     0x0000000000010d70        0x8
                 [!provide]                        PROVIDE (__fini_array_start = .)
  *(SORT_BY_INIT_PRIORITY(.fini_array.*) SORT_BY_INIT_PRIORITY(.dtors.*))
  *(.fini_array EXCLUDE_FILE(*crtend?.o *crtend.o *crtbegin?.o *crtbegin.o) .dtors)
- .fini_array    0x0000000000005d88        0x8 /usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/crtbeginS.o
+ .fini_array    0x0000000000010d70        0x8 /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.0/crtbeginS.o
                 [!provide]                        PROVIDE (__fini_array_end = .)
 
 .ctors
@@ -302,91 +725,110 @@ LOAD /usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../../../lib/crtn.o
 .jcr
  *(.jcr)
 
-.data.rel.ro    0x0000000000005d90        0x0
+.data.rel.ro    0x0000000000010d78        0x0
  *(.data.rel.ro.local* .gnu.linkonce.d.rel.ro.local.*)
  *(.data.rel.ro .data.rel.ro.* .gnu.linkonce.d.rel.ro.*)
- .data.rel.ro   0x0000000000005d90        0x0 /usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../../../lib/Scrt1.o
+ .data.rel.ro   0x0000000000010d78        0x0 /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.0/../../../../lib/Scrt1.o
 
-.dynamic        0x0000000000005d90      0x240
+.dynamic        0x0000000000010d78      0x240
  *(.dynamic)
- .dynamic       0x0000000000005d90      0x240 /usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../../../lib/Scrt1.o
-                0x0000000000005d90                _DYNAMIC
+ .dynamic       0x0000000000010d78      0x240 /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.0/../../../../lib/Scrt1.o
+                0x0000000000010d78                _DYNAMIC
 
-.got            0x0000000000005fd0       0x30
+.got            0x0000000000010fb8       0x30
  *(.got)
- .got           0x0000000000005fd0       0x30 /usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../../../lib/Scrt1.o
+ .got           0x0000000000010fb8       0x30 /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.0/../../../../lib/Scrt1.o
  *(.igot)
-                0x0000000000006fe8                . = DATA_SEGMENT_RELRO_END (., (SIZEOF (.got.plt) >= 0x18)?0x18:0x0)
+                0x0000000000010fe8                . = DATA_SEGMENT_RELRO_END (., (SIZEOF (.got.plt) >= 0x18)?0x18:0x0)
 
-.got.plt        0x0000000000006000       0x20
+.got.plt        0x0000000000010fe8      0x230
  *(.got.plt)
- .got.plt       0x0000000000006000       0x20 /usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../../../lib/Scrt1.o
-                0x0000000000006000                _GLOBAL_OFFSET_TABLE_
+ .got.plt       0x0000000000010fe8      0x230 /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.0/../../../../lib/Scrt1.o
+                0x0000000000010fe8                _GLOBAL_OFFSET_TABLE_
  *(.igot.plt)
 
-.data           0x0000000000006020      0xbf0
+.data           0x0000000000011218       0x19
  *(.data .data.* .gnu.linkonce.d.*)
- .data          0x0000000000006020        0x4 /usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../../../lib/Scrt1.o
-                0x0000000000006020                data_start
-                0x0000000000006020                __data_start
- .data          0x0000000000006024        0x0 /usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../../../lib/crti.o
- .data          0x0000000000006024        0x0 /usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/crtbeginS.o
- *fill*         0x0000000000006024        0x4 
+ .data          0x0000000000011218        0x4 /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.0/../../../../lib/Scrt1.o
+                0x0000000000011218                data_start
+                0x0000000000011218                __data_start
+ .data          0x000000000001121c        0x0 /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.0/../../../../lib/crti.o
+ .data          0x000000000001121c        0x0 /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.0/crtbeginS.o
+ *fill*         0x000000000001121c        0x4 
  .data.rel.local
-                0x0000000000006028        0x8 /usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/crtbeginS.o
-                0x0000000000006028                __dso_handle
- .data          0x0000000000006030        0x0 dumpBufDesc.o
- *fill*         0x0000000000006030       0x10 
- .data.rel.local
-                0x0000000000006040      0xbd0 dumpBufDesc.o
- .data          0x0000000000006c10        0x0 /usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/crtendS.o
- .data          0x0000000000006c10        0x0 /usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../../../lib/crtn.o
+                0x0000000000011220        0x8 /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.0/crtbeginS.o
+                0x0000000000011220                __dso_handle
+ .data          0x0000000000011228        0x0 TestNML.o
+ .data.rel.local.DW.ref.__gxx_personality_v0
+                0x0000000000011228        0x8 TestNML.o
+                0x0000000000011228                DW.ref.__gxx_personality_v0
+ .data          0x0000000000011230        0x0 /home/dragos/Apps/linuxcnc/src/objects/emc/nml_intf/emc.o
+ .data          0x0000000000011230        0x0 /home/dragos/Apps/linuxcnc/src/objects/emc/nml_intf/emcops.o
+ .data          0x0000000000011230        0x0 /home/dragos/Apps/linuxcnc/src/objects/emc/rs274ngc/modal_state.o
+ .data          0x0000000000011230        0x0 /home/dragos/Apps/linuxcnc/src/objects/emc/tooldata/tooldata_common.o
+ .data          0x0000000000011230        0x0 /home/dragos/Apps/linuxcnc/src/objects/emc/tooldata/tooldata_mmap.o
+ .data          0x0000000000011230        0x1 /home/dragos/Apps/linuxcnc/src/objects/emc/tooldata/tooldata_db.o
+ .data          0x0000000000011231        0x0 /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.0/crtendS.o
+ .data          0x0000000000011231        0x0 /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.0/../../../../lib/crtn.o
 
 .tm_clone_table
-                0x0000000000006c10        0x0
+                0x0000000000011238        0x0
  .tm_clone_table
-                0x0000000000006c10        0x0 /usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/crtbeginS.o
+                0x0000000000011238        0x0 /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.0/crtbeginS.o
  .tm_clone_table
-                0x0000000000006c10        0x0 /usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/crtendS.o
+                0x0000000000011238        0x0 /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.0/crtendS.o
 
 .data1
  *(.data1)
-                0x0000000000006c10                _edata = .
+                0x0000000000011231                _edata = .
                 [!provide]                        PROVIDE (edata = .)
-                0x0000000000006c10                . = .
-                0x0000000000006c10                __bss_start = .
+                0x0000000000011238                . = .
+                0x0000000000011231                __bss_start = .
 
-.bss            0x0000000000006c10        0x8
+.bss            0x0000000000011240     0x11a8
  *(.dynbss)
- .dynbss        0x0000000000006c10        0x0 /usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../../../lib/Scrt1.o
+ .dynbss        0x0000000000011240        0x0 /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.0/../../../../lib/Scrt1.o
  *(.bss .bss.* .gnu.linkonce.b.*)
- .bss           0x0000000000006c10        0x0 /usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../../../lib/Scrt1.o
- .bss           0x0000000000006c10        0x0 /usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../../../lib/crti.o
- .bss           0x0000000000006c10        0x1 /usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/crtbeginS.o
- .bss           0x0000000000006c11        0x0 dumpBufDesc.o
- .bss           0x0000000000006c11        0x0 /usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/crtendS.o
- .bss           0x0000000000006c11        0x0 /usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../../../lib/crtn.o
+ .bss           0x0000000000011240        0x0 /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.0/../../../../lib/Scrt1.o
+ .bss           0x0000000000011240        0x0 /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.0/../../../../lib/crti.o
+ .bss           0x0000000000011240        0x1 /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.0/crtbeginS.o
+ *fill*         0x0000000000011241        0x7 
+ .bss           0x0000000000011248       0x20 TestNML.o
+                0x0000000000011248                status
+                0x0000000000011250                cErr
+                0x0000000000011258                cStat
+                0x0000000000011260                cCmd
+ .bss           0x0000000000011268        0x0 /home/dragos/Apps/linuxcnc/src/objects/emc/nml_intf/emc.o
+ .bss           0x0000000000011268        0x0 /home/dragos/Apps/linuxcnc/src/objects/emc/nml_intf/emcops.o
+ .bss           0x0000000000011268        0x0 /home/dragos/Apps/linuxcnc/src/objects/emc/rs274ngc/modal_state.o
+ .bss           0x0000000000011268        0xd /home/dragos/Apps/linuxcnc/src/objects/emc/tooldata/tooldata_common.o
+ *fill*         0x0000000000011275        0xb 
+ .bss           0x0000000000011280      0x124 /home/dragos/Apps/linuxcnc/src/objects/emc/tooldata/tooldata_mmap.o
+ *fill*         0x00000000000113a4       0x1c 
+ .bss           0x00000000000113c0     0x1023 /home/dragos/Apps/linuxcnc/src/objects/emc/tooldata/tooldata_db.o
+ .bss           0x00000000000123e3        0x0 /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.0/crtendS.o
+ .bss           0x00000000000123e3        0x0 /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.0/../../../../lib/crtn.o
  *(COMMON)
-                0x0000000000006c18                . = ALIGN ((. != 0x0)?0x8:0x1)
- *fill*         0x0000000000006c11        0x7 
+                0x00000000000123e8                . = ALIGN ((. != 0x0)?0x8:0x1)
+ *fill*         0x00000000000123e3        0x5 
 
 .lbss
  *(.dynlbss)
  *(.lbss .lbss.* .gnu.linkonce.lb.*)
  *(LARGE_COMMON)
-                0x0000000000006c18                . = ALIGN (0x8)
-                0x0000000000006c18                . = SEGMENT_START ("ldata-segment", .)
+                0x00000000000123e8                . = ALIGN (0x8)
+                0x00000000000123e8                . = SEGMENT_START ("ldata-segment", .)
 
 .lrodata
  *(.lrodata .lrodata.* .gnu.linkonce.lr.*)
 
-.ldata          0x0000000000008c18        0x0
+.ldata          0x00000000000143e8        0x0
  *(.ldata .ldata.* .gnu.linkonce.l.*)
-                0x0000000000008c18                . = ALIGN ((. != 0x0)?0x8:0x1)
-                0x0000000000008c18                . = ALIGN (0x8)
-                0x0000000000006c18                _end = .
+                0x00000000000143e8                . = ALIGN ((. != 0x0)?0x8:0x1)
+                0x00000000000143e8                . = ALIGN (0x8)
+                0x00000000000123e8                _end = .
                 [!provide]                        PROVIDE (end = .)
-                0x0000000000008c18                . = DATA_SEGMENT_END (.)
+                0x00000000000143e8                . = DATA_SEGMENT_END (.)
 
 .stab
  *(.stab)
@@ -408,11 +850,17 @@ LOAD /usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../../../lib/crtn.o
 
 .comment        0x0000000000000000       0x12
  *(.comment)
- .comment       0x0000000000000000       0x12 /usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../../../lib/Scrt1.o
+ .comment       0x0000000000000000       0x12 /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.0/../../../../lib/Scrt1.o
                                          0x26 (size before relaxing)
- .comment       0x0000000000000012       0x13 /usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/crtbeginS.o
- .comment       0x0000000000000012       0x13 dumpBufDesc.o
- .comment       0x0000000000000012       0x13 /usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/crtendS.o
+ .comment       0x0000000000000012       0x13 /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.0/crtbeginS.o
+ .comment       0x0000000000000012       0x13 TestNML.o
+ .comment       0x0000000000000012       0x13 /home/dragos/Apps/linuxcnc/src/objects/emc/nml_intf/emc.o
+ .comment       0x0000000000000012       0x13 /home/dragos/Apps/linuxcnc/src/objects/emc/nml_intf/emcops.o
+ .comment       0x0000000000000012       0x13 /home/dragos/Apps/linuxcnc/src/objects/emc/rs274ngc/modal_state.o
+ .comment       0x0000000000000012       0x13 /home/dragos/Apps/linuxcnc/src/objects/emc/tooldata/tooldata_common.o
+ .comment       0x0000000000000012       0x13 /home/dragos/Apps/linuxcnc/src/objects/emc/tooldata/tooldata_mmap.o
+ .comment       0x0000000000000012       0x13 /home/dragos/Apps/linuxcnc/src/objects/emc/tooldata/tooldata_db.o
+ .comment       0x0000000000000012       0x13 /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.0/crtendS.o
 
 .gnu.build.attributes
  *(.gnu.build.attributes .gnu.build.attributes.*)
@@ -429,54 +877,96 @@ LOAD /usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../../../lib/crtn.o
 .debug_sfnames
  *(.debug_sfnames)
 
-.debug_aranges  0x0000000000000000      0x120
+.debug_aranges  0x0000000000000000      0x250
  *(.debug_aranges)
  .debug_aranges
-                0x0000000000000000       0x70 /usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../../../lib/Scrt1.o
+                0x0000000000000000       0x70 /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.0/../../../../lib/Scrt1.o
  .debug_aranges
-                0x0000000000000070       0x40 /usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../../../lib/crti.o
+                0x0000000000000070       0x40 /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.0/../../../../lib/crti.o
  .debug_aranges
-                0x00000000000000b0       0x30 dumpBufDesc.o
+                0x00000000000000b0       0x40 TestNML.o
  .debug_aranges
-                0x00000000000000e0       0x40 /usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../../../lib/crtn.o
+                0x00000000000000f0       0x30 /home/dragos/Apps/linuxcnc/src/objects/emc/nml_intf/emc.o
+ .debug_aranges
+                0x0000000000000120       0x30 /home/dragos/Apps/linuxcnc/src/objects/emc/nml_intf/emcops.o
+ .debug_aranges
+                0x0000000000000150       0x30 /home/dragos/Apps/linuxcnc/src/objects/emc/rs274ngc/modal_state.o
+ .debug_aranges
+                0x0000000000000180       0x30 /home/dragos/Apps/linuxcnc/src/objects/emc/tooldata/tooldata_common.o
+ .debug_aranges
+                0x00000000000001b0       0x30 /home/dragos/Apps/linuxcnc/src/objects/emc/tooldata/tooldata_mmap.o
+ .debug_aranges
+                0x00000000000001e0       0x30 /home/dragos/Apps/linuxcnc/src/objects/emc/tooldata/tooldata_db.o
+ .debug_aranges
+                0x0000000000000210       0x40 /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.0/../../../../lib/crtn.o
 
 .debug_pubnames
  *(.debug_pubnames)
 
-.debug_info     0x0000000000000000     0x2517
+.debug_info     0x0000000000000000    0x3568a
  *(.debug_info .gnu.linkonce.wi.*)
- .debug_info    0x0000000000000000      0x53f /usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../../../lib/Scrt1.o
- .debug_info    0x000000000000053f       0x23 /usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../../../lib/crti.o
- .debug_info    0x0000000000000562     0x1f92 dumpBufDesc.o
- .debug_info    0x00000000000024f4       0x23 /usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../../../lib/crtn.o
+ .debug_info    0x0000000000000000      0x54e /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.0/../../../../lib/Scrt1.o
+ .debug_info    0x000000000000054e       0x23 /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.0/../../../../lib/crti.o
+ .debug_info    0x0000000000000571     0x9cfb TestNML.o
+ .debug_info    0x000000000000a26c    0x11c36 /home/dragos/Apps/linuxcnc/src/objects/emc/nml_intf/emc.o
+ .debug_info    0x000000000001bea2     0x7b8b /home/dragos/Apps/linuxcnc/src/objects/emc/nml_intf/emcops.o
+ .debug_info    0x0000000000023a2d     0x5c06 /home/dragos/Apps/linuxcnc/src/objects/emc/rs274ngc/modal_state.o
+ .debug_info    0x0000000000029633     0x4711 /home/dragos/Apps/linuxcnc/src/objects/emc/tooldata/tooldata_common.o
+ .debug_info    0x000000000002dd44     0x3e96 /home/dragos/Apps/linuxcnc/src/objects/emc/tooldata/tooldata_mmap.o
+ .debug_info    0x0000000000031bda     0x3a8d /home/dragos/Apps/linuxcnc/src/objects/emc/tooldata/tooldata_db.o
+ .debug_info    0x0000000000035667       0x23 /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.0/../../../../lib/crtn.o
 
-.debug_abbrev   0x0000000000000000      0x542
+.debug_abbrev   0x0000000000000000     0x395c
  *(.debug_abbrev)
- .debug_abbrev  0x0000000000000000      0x174 /usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../../../lib/Scrt1.o
- .debug_abbrev  0x0000000000000174       0x12 /usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../../../lib/crti.o
- .debug_abbrev  0x0000000000000186      0x3aa dumpBufDesc.o
- .debug_abbrev  0x0000000000000530       0x12 /usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../../../lib/crtn.o
+ .debug_abbrev  0x0000000000000000      0x181 /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.0/../../../../lib/Scrt1.o
+ .debug_abbrev  0x0000000000000181       0x12 /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.0/../../../../lib/crti.o
+ .debug_abbrev  0x0000000000000193      0xa55 TestNML.o
+ .debug_abbrev  0x0000000000000be8      0x8fc /home/dragos/Apps/linuxcnc/src/objects/emc/nml_intf/emc.o
+ .debug_abbrev  0x00000000000014e4      0x92f /home/dragos/Apps/linuxcnc/src/objects/emc/nml_intf/emcops.o
+ .debug_abbrev  0x0000000000001e13      0x790 /home/dragos/Apps/linuxcnc/src/objects/emc/rs274ngc/modal_state.o
+ .debug_abbrev  0x00000000000025a3      0x60f /home/dragos/Apps/linuxcnc/src/objects/emc/tooldata/tooldata_common.o
+ .debug_abbrev  0x0000000000002bb2      0x767 /home/dragos/Apps/linuxcnc/src/objects/emc/tooldata/tooldata_mmap.o
+ .debug_abbrev  0x0000000000003319      0x631 /home/dragos/Apps/linuxcnc/src/objects/emc/tooldata/tooldata_db.o
+ .debug_abbrev  0x000000000000394a       0x12 /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.0/../../../../lib/crtn.o
 
-.debug_line     0x0000000000000000      0x328
+.debug_line     0x0000000000000000     0x6681
  *(.debug_line .debug_line.* .debug_line_end)
- .debug_line    0x0000000000000000      0x111 /usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../../../lib/Scrt1.o
- .debug_line    0x0000000000000111       0x67 /usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../../../lib/crti.o
- .debug_line    0x0000000000000178      0x14e dumpBufDesc.o
- .debug_line    0x00000000000002c6       0x62 /usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../../../lib/crtn.o
+ .debug_line    0x0000000000000000      0x111 /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.0/../../../../lib/Scrt1.o
+ .debug_line    0x0000000000000111       0x67 /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.0/../../../../lib/crti.o
+ .debug_line    0x0000000000000178      0xc5d TestNML.o
+ .debug_line    0x0000000000000dd5     0x24dc /home/dragos/Apps/linuxcnc/src/objects/emc/nml_intf/emc.o
+ .debug_line    0x00000000000032b1      0x786 /home/dragos/Apps/linuxcnc/src/objects/emc/nml_intf/emcops.o
+ .debug_line    0x0000000000003a37      0x28b /home/dragos/Apps/linuxcnc/src/objects/emc/rs274ngc/modal_state.o
+ .debug_line    0x0000000000003cc2     0x11d6 /home/dragos/Apps/linuxcnc/src/objects/emc/tooldata/tooldata_common.o
+ .debug_line    0x0000000000004e98      0xbf0 /home/dragos/Apps/linuxcnc/src/objects/emc/tooldata/tooldata_mmap.o
+ .debug_line    0x0000000000005a88      0xb97 /home/dragos/Apps/linuxcnc/src/objects/emc/tooldata/tooldata_db.o
+ .debug_line    0x000000000000661f       0x62 /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.0/../../../../lib/crtn.o
 
 .debug_frame
  *(.debug_frame)
 
-.debug_str      0x0000000000000000      0xe77
+.debug_str      0x0000000000000000     0xde2c
  *(.debug_str)
- .debug_str     0x0000000000000000      0x43a /usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../../../lib/Scrt1.o
-                                        0x5cf (size before relaxing)
- .debug_str     0x000000000000043a       0x19 /usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../../../lib/crti.o
-                                         0x40 (size before relaxing)
- .debug_str     0x0000000000000453      0xa0b dumpBufDesc.o
-                                        0xd4d (size before relaxing)
- .debug_str     0x0000000000000e5e       0x19 /usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../../../lib/crtn.o
-                                         0x40 (size before relaxing)
+ .debug_str     0x0000000000000000      0x436 /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.0/../../../../lib/Scrt1.o
+                                        0x5d8 (size before relaxing)
+ .debug_str     0x0000000000000436       0x19 /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.0/../../../../lib/crti.o
+                                         0x42 (size before relaxing)
+ .debug_str     0x000000000000044f     0x81ea TestNML.o
+                                       0x87a8 (size before relaxing)
+ .debug_str     0x0000000000008639     0x4982 /home/dragos/Apps/linuxcnc/src/objects/emc/nml_intf/emc.o
+                                       0xc63f (size before relaxing)
+ .debug_str     0x000000000000cfbb      0x323 /home/dragos/Apps/linuxcnc/src/objects/emc/nml_intf/emcops.o
+                                       0x849b (size before relaxing)
+ .debug_str     0x000000000000d2de      0x1ab /home/dragos/Apps/linuxcnc/src/objects/emc/rs274ngc/modal_state.o
+                                       0x7268 (size before relaxing)
+ .debug_str     0x000000000000d489      0x3c5 /home/dragos/Apps/linuxcnc/src/objects/emc/tooldata/tooldata_common.o
+                                       0x1255 (size before relaxing)
+ .debug_str     0x000000000000d84e      0x31e /home/dragos/Apps/linuxcnc/src/objects/emc/tooldata/tooldata_mmap.o
+                                       0x1416 (size before relaxing)
+ .debug_str     0x000000000000db6c      0x2a7 /home/dragos/Apps/linuxcnc/src/objects/emc/tooldata/tooldata_db.o
+                                       0x124a (size before relaxing)
+ .debug_str     0x000000000000de13       0x19 /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.0/../../../../lib/crtn.o
+                                         0x42 (size before relaxing)
 
 .debug_loc
  *(.debug_loc)
@@ -506,26 +996,56 @@ LOAD /usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../../../lib/crtn.o
  *(.debug_addr)
 
 .debug_line_str
-                0x0000000000000000      0x3b3
+                0x0000000000000000      0x710
  *(.debug_line_str)
  .debug_line_str
-                0x0000000000000000      0x130 /usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../../../lib/Scrt1.o
-                                        0x1a7 (size before relaxing)
+                0x0000000000000000      0x128 /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.0/../../../../lib/Scrt1.o
+                                        0x19f (size before relaxing)
  .debug_line_str
-                0x0000000000000130        0x7 /usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../../../lib/crti.o
-                                         0x3b (size before relaxing)
+                0x0000000000000128        0x7 /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.0/../../../../lib/crti.o
+                                         0x34 (size before relaxing)
  .debug_line_str
-                0x0000000000000137      0x275 dumpBufDesc.o
-                                        0x303 (size before relaxing)
+                0x000000000000012f      0x3d5 TestNML.o
+                                        0x486 (size before relaxing)
  .debug_line_str
-                0x00000000000003ac        0x7 /usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../../../lib/crtn.o
-                                         0x3b (size before relaxing)
+                0x0000000000000504       0xdb /home/dragos/Apps/linuxcnc/src/objects/emc/nml_intf/emc.o
+                                        0x4bd (size before relaxing)
+ .debug_line_str
+                0x00000000000005df       0x3e /home/dragos/Apps/linuxcnc/src/objects/emc/nml_intf/emcops.o
+                                        0x4aa (size before relaxing)
+ .debug_line_str
+                0x000000000000061d       0x38 /home/dragos/Apps/linuxcnc/src/objects/emc/rs274ngc/modal_state.o
+                                        0x42b (size before relaxing)
+ .debug_line_str
+                0x0000000000000655       0x28 /home/dragos/Apps/linuxcnc/src/objects/emc/tooldata/tooldata_common.o
+                                        0x3ae (size before relaxing)
+ .debug_line_str
+                0x000000000000067d       0x51 /home/dragos/Apps/linuxcnc/src/objects/emc/tooldata/tooldata_mmap.o
+                                        0x411 (size before relaxing)
+ .debug_line_str
+                0x00000000000006ce       0x3b /home/dragos/Apps/linuxcnc/src/objects/emc/tooldata/tooldata_db.o
+                                        0x3d1 (size before relaxing)
+ .debug_line_str
+                0x0000000000000709        0x7 /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.0/../../../../lib/crtn.o
+                                         0x34 (size before relaxing)
 
 .debug_loclists
-                0x0000000000000000       0x73
+                0x0000000000000000     0x616d
  *(.debug_loclists)
  .debug_loclists
-                0x0000000000000000       0x73 dumpBufDesc.o
+                0x0000000000000000      0xbf5 TestNML.o
+ .debug_loclists
+                0x0000000000000bf5     0x2ded /home/dragos/Apps/linuxcnc/src/objects/emc/nml_intf/emc.o
+ .debug_loclists
+                0x00000000000039e2      0x435 /home/dragos/Apps/linuxcnc/src/objects/emc/nml_intf/emcops.o
+ .debug_loclists
+                0x0000000000003e17      0x10b /home/dragos/Apps/linuxcnc/src/objects/emc/rs274ngc/modal_state.o
+ .debug_loclists
+                0x0000000000003f22      0xef3 /home/dragos/Apps/linuxcnc/src/objects/emc/tooldata/tooldata_common.o
+ .debug_loclists
+                0x0000000000004e15      0xa51 /home/dragos/Apps/linuxcnc/src/objects/emc/tooldata/tooldata_mmap.o
+ .debug_loclists
+                0x0000000000005866      0x907 /home/dragos/Apps/linuxcnc/src/objects/emc/tooldata/tooldata_db.o
 
 .debug_macro
  *(.debug_macro)
@@ -534,14 +1054,24 @@ LOAD /usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../../../lib/crtn.o
  *(.debug_names)
 
 .debug_rnglists
-                0x0000000000000000       0x6c
+                0x0000000000000000      0x801
  *(.debug_rnglists)
  .debug_rnglists
-                0x0000000000000000       0x21 /usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../../../lib/crti.o
+                0x0000000000000000       0x21 /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.0/../../../../lib/crti.o
  .debug_rnglists
-                0x0000000000000021       0x2a dumpBufDesc.o
+                0x0000000000000021      0x25d TestNML.o
  .debug_rnglists
-                0x000000000000004b       0x21 /usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../../../lib/crtn.o
+                0x000000000000027e       0xf0 /home/dragos/Apps/linuxcnc/src/objects/emc/nml_intf/emcops.o
+ .debug_rnglists
+                0x000000000000036e       0x81 /home/dragos/Apps/linuxcnc/src/objects/emc/rs274ngc/modal_state.o
+ .debug_rnglists
+                0x00000000000003ef      0x12e /home/dragos/Apps/linuxcnc/src/objects/emc/tooldata/tooldata_common.o
+ .debug_rnglists
+                0x000000000000051d      0x15c /home/dragos/Apps/linuxcnc/src/objects/emc/tooldata/tooldata_mmap.o
+ .debug_rnglists
+                0x0000000000000679      0x167 /home/dragos/Apps/linuxcnc/src/objects/emc/tooldata/tooldata_db.o
+ .debug_rnglists
+                0x00000000000007e0       0x21 /usr/lib/gcc/x86_64-pc-linux-gnu/12.2.0/../../../../lib/crtn.o
 
 .debug_str_offsets
  *(.debug_str_offsets)
@@ -556,4 +1086,4 @@ LOAD /usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/../../../../lib/crtn.o
  *(.note.GNU-stack)
  *(.gnu_debuglink)
  *(.gnu.lto_*)
-OUTPUT(DumpBufDesc elf64-x86-64)
+OUTPUT(TestNML elf64-x86-64)
