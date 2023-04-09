@@ -1,9 +1,11 @@
 package com.mindovercnc.linuxcnc
 
 import java.io.File
+import java.util.logging.Logger
 
 object CncInitializer {
 
+    private val logger = Logger.getLogger("CncInitializer")
     private const val libName = "libLinuxCNC.so"
 
     /**
@@ -12,7 +14,7 @@ object CncInitializer {
     operator fun invoke(destFolder: File): File {
         val destFile = File(destFolder, libName)
         if (!destFile.exists()) {
-            println("Copy $libName to $destFolder")
+            logger.info("Copy $libName to $destFolder")
             CncInitializer::class.java.classLoader
                 .getResourceAsStream(libName).use {
                     it.copyTo(destFile.outputStream())
