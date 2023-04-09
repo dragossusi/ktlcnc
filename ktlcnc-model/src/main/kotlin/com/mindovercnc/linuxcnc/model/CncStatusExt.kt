@@ -3,51 +3,55 @@ package com.mindovercnc.linuxcnc.model
 import kotlin.math.acos
 import kotlin.math.cos
 import kotlin.math.sin
+import ro.dragossusi.proto.linuxcnc.CncStatus
+import ro.dragossusi.proto.linuxcnc.status.InterpreterState
+import ro.dragossusi.proto.linuxcnc.status.SpindleDirection
+import ro.dragossusi.proto.linuxcnc.status.TaskMode.*
+import ro.dragossusi.proto.linuxcnc.status.TaskState.*
+import ro.dragossusi.proto.linuxcnc.status.Position as Position
 
 fun CncStatus.isHomed(): Boolean {
-    motionStatus.jointsStatus.forEach {
-        if (it.isHomed.not()) return false
+    motionStatus.jointStatusList.forEach {
+        if (it.homed.not()) return false
     }
     return true
 }
 
-val CncStatus.isXHomed get() = motionStatus.jointsStatus[0].isHomed
-val CncStatus.isZHomed get() = motionStatus.jointsStatus[1].isHomed
+val CncStatus.isXHomed get() = motionStatus.jointStatusList[0].homed
+val CncStatus.isZHomed get() = motionStatus.jointStatusList[1].homed
 
-val CncStatus.isXHoming get() = motionStatus.jointsStatus[0].isHoming
-val CncStatus.isZHoming get() = motionStatus.jointsStatus[1].isHoming
+val CncStatus.isXHoming get() = motionStatus.jointStatusList[0].homing
+val CncStatus.isZHoming get() = motionStatus.jointStatusList[1].homing
 
 val CncStatus.isInterpreterIdle get() = taskStatus.interpreterState == InterpreterState.Idle
 
 val CncStatus.jogVelocity get() = motionStatus.trajectoryStatus.maxVelocity
 
-val CncStatus.isEstop get() = taskStatus.taskState == TaskState.EStop
+val CncStatus.isEstop get() = taskStatus.taskState == EStop
 
-val CncStatus.isNotOn get() = taskStatus.taskState == TaskState.MachineOff || taskStatus.taskState == TaskState.EStopReset
+val CncStatus.isNotOn get() = taskStatus.taskState == MachineOff || taskStatus.taskState == EStopReset
 
-val CncStatus.isOn get() = taskStatus.taskState == TaskState.MachineOn
+val CncStatus.isOn get() = taskStatus.taskState == MachineOn
 
-val CncStatus.isMinSoftLimitOnX get() = motionStatus.jointsStatus[0].minSoftLimitExceeded
-val CncStatus.isMaxSoftLimitOnX get() = motionStatus.jointsStatus[0].maxSoftLimitExceeded
-val CncStatus.isMinSoftLimitOnZ get() = motionStatus.jointsStatus[1].minSoftLimitExceeded
-val CncStatus.isMaxSoftLimitOnZ get() = motionStatus.jointsStatus[1].maxSoftLimitExceeded
+val CncStatus.isMinSoftLimitOnX get() = motionStatus.jointStatusList[0].minSoftLimitExceeded
+val CncStatus.isMaxSoftLimitOnX get() = motionStatus.jointStatusList[0].maxSoftLimitExceeded
+val CncStatus.isMinSoftLimitOnZ get() = motionStatus.jointStatusList[1].minSoftLimitExceeded
+val CncStatus.isMaxSoftLimitOnZ get() = motionStatus.jointStatusList[1].maxSoftLimitExceeded
 
-val CncStatus.isDiameterMode get() = taskStatus.activeCodes.gCodes.contains(7.0f)
+val CncStatus.isDiameterMode get() = taskStatus.activeCodes.gCodesList.contains(7.0f)
 
-val CncStatus.g53Position get() = motionStatus.trajectoryStatus.currentActualPosition
+val CncStatus.g53Position get() = motionStatus.trajectoryStatus.actualPosition
 
-val CncStatus.currentToolNo get() = ioStatus.toolStatus.currentLoadedTool
-
-val CncStatus.dtg get() = motionStatus.trajectoryStatus.distance2Go
+val CncStatus.dtg get() = motionStatus.trajectoryStatus.distanceToGo
 
 fun CncStatus.getDisplayablePosition(): Position {
     val machinePosition = g53Position
-    val g5xOffset = taskStatus.g5xOffset
+    val g5xOffset = taskStatus.g5XOffset
     val toolOffset = taskStatus.toolOffset
     val rotationXY = taskStatus.rotationXY
     val g92Offset = taskStatus.g92Offset
 
-    val builder = Position.Builder()
+    val builder = Position.newBuilder()
     builder.x = machinePosition.x - g5xOffset.x - toolOffset.x
     builder.y = machinePosition.y - g5xOffset.y - toolOffset.y
     builder.z = machinePosition.z - g5xOffset.z - toolOffset.z
@@ -80,12 +84,12 @@ fun CncStatus.getDisplayablePosition(): Position {
 }
 
 fun CncStatus.getRelativeToolPosition(): Position {
-    val g5xOffset = taskStatus.g5xOffset
+    val g5xOffset = taskStatus.g5XOffset
     val toolOffset = taskStatus.toolOffset
     val rotationXY = taskStatus.rotationXY
     val g92Offset = taskStatus.g92Offset
 
-    val builder = Position.Builder()
+    val builder = Position.newBuilder()
     builder.x = g5xOffset.x + toolOffset.x
     builder.y = g5xOffset.y + toolOffset.y
     builder.z = g5xOffset.z + toolOffset.z
@@ -119,9 +123,9 @@ fun CncStatus.getRelativeToolPosition(): Position {
 
 
 val CncStatus.isSpindleOn
-    get() = motionStatus.spindlesStatus[0].direction == SpindleStatus.Direction.REVERSE ||
-            motionStatus.spindlesStatus[0].direction == SpindleStatus.Direction.FORWARD
+    get() = motionStatus.spindleStatusList[0].direction == SpindleDirection.REVERSE ||
+            motionStatus.spindleStatusList[0].direction == SpindleDirection.FORWARD
 
-val CncStatus.isInMdiMode get() = taskStatus.taskMode == TaskMode.TaskModeMDI
-val CncStatus.isInManualMode get() = taskStatus.taskMode == TaskMode.TaskModeManual
-val CncStatus.isInAutoMode get() = taskStatus.taskMode == TaskMode.TaskModeAuto
+val CncStatus.isInMdiMode get() = taskStatus.taskMode == TaskModeMDI
+val CncStatus.isInManualMode get() = taskStatus.taskMode == TaskModeManual
+val CncStatus.isInAutoMode get() = taskStatus.taskMode == TaskModeAuto

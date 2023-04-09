@@ -1,7 +1,12 @@
 object Versions {
-    const val kotlin = "1.6.20"
-    const val coroutines = "1.6.1"
-    const val serialization = "1.3.2"
+    const val kotlin = "1.8.10"
+    const val coroutines = "1.6.4"
+    const val serialization = "1.5.0"
 
-    const val app = "0.0.1"
+    object Protobuf {
+        const val plugin = "0.9.2"
+        const val protobuf_kotlin = "3.22.2"
+    }
+
+    const val app = "0.0.2"
 }

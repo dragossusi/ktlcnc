@@ -1,43 +1,47 @@
+import com.google.protobuf.gradle.*
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
-    kotlin("jvm")
-    `maven-publish`
-    signing
+  kotlin("jvm")
+  id("com.google.protobuf")
+  `maven-publish`
+  signing
 }
 
 group = "ro.dragossusi"
+
 version = Versions.app
 
-repositories {
-    mavenCentral()
-}
+repositories { mavenCentral() }
 
 dependencies {
-    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:${Versions.coroutines}")
-    testImplementation(kotlin("test"))
+  protobuf(project(":protos"))
+
+  implementation(Libs.Kotlinx.coroutines_core)
+  api(Libs.Protobuf.proto_kotlin)
+  testImplementation(kotlin("test"))
 }
 
-tasks.test {
-    useJUnitPlatform()
+protobuf {
+  protoc { artifact = "com.google.protobuf:protoc:${Versions.Protobuf.protobuf_kotlin}" }
+
+  generateProtoTasks { all().forEach { it.builtins { id("kotlin") } } }
 }
 
-tasks.withType<KotlinCompile> {
-    kotlinOptions.jvmTarget = "1.8"
-}
+tasks.test { useJUnitPlatform() }
+
+tasks.withType<KotlinCompile> { kotlinOptions.jvmTarget = "1.8" }
 
 publishing {
-    publications {
-        create<MavenPublication>("maven") {
-            from(components["java"])
-        }
-        publications.withType<MavenPublication> {
-            pom {
-                name.set("Kotlin LinuxCNC")
-                description.set("LinuxCNC communication from kotlin")
-            }
-        }
+  publications {
+    create<MavenPublication>("maven") { from(components["java"]) }
+    publications.withType<MavenPublication> {
+      pom {
+        name.set("Kotlin LinuxCNC")
+        description.set("LinuxCNC communication from kotlin")
+      }
     }
+  }
 }
 
 apply<PublishPlugin>()

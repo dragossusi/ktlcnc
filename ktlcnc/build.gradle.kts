@@ -23,6 +23,7 @@ repositories {
 dependencies {
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:${Versions.coroutines}")
     api(project(":ktlcnc-model"))
+    api(project(":protos"))
 
     testImplementation(kotlin("test"))
 }

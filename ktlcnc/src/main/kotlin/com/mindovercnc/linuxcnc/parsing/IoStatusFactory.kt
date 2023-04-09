@@ -1,25 +1,30 @@
 package com.mindovercnc.linuxcnc.parsing
 
-import com.mindovercnc.linuxcnc.model.IoStatus
-import com.mindovercnc.linuxcnc.model.ToolStatus
 import com.mindovercnc.linuxcnc.nml.BuffDescriptor
 import com.mindovercnc.linuxcnc.nml.Key
 import java.nio.ByteBuffer
+import ro.dragossusi.proto.linuxcnc.status.*
 
 class IoStatusFactory(descriptor: BuffDescriptor) : ParsingFactory<IoStatus>(descriptor) {
 
-    override fun parse(byteBuffer: ByteBuffer) = IoStatus(
-        cycleTime = byteBuffer.getDoubleForKey(Key.IoCycleTime)!!,
-        reason = byteBuffer.getIntForKey(Key.IoReason)!!,
-        isM6Fault = byteBuffer.getBooleanForKey(Key.IoFaultDuringM6)!!,
-        toolStatus = ToolStatus(
-            pocketPrepared = byteBuffer.getIntForKey(Key.IoPocketPrepared)!!,
-            currentLoadedTool = byteBuffer.getIntForKey(Key.IoLoadedTool)!!
-        ),
-        isMistOn = byteBuffer.getBooleanForKey(Key.IoCoolantMist)!!,
-        isFloodOn = byteBuffer.getBooleanForKey(Key.IoCoolantFlood)!!,
-        isEstopActive = byteBuffer.getBooleanForKey(Key.IoAuxEstop)!!,
-        isLubePumpOn = byteBuffer.getBooleanForKey(Key.IoAuxLubeOn)!!,
-        isLubeLevelOk = byteBuffer.getBooleanForKey(Key.IoAuxLubeLevelOk)!!
-    )
+  override fun parse(byteBuffer: ByteBuffer) = ioStatus {
+    cycleTime = byteBuffer.getDoubleForKey(Key.IoCycleTime)!!
+    reason = byteBuffer.getIntForKey(Key.IoReason)!!
+    fault = byteBuffer.getBooleanForKey(Key.IoFaultDuringM6)!!.toInt()
+    toolStatus = toolStatus {
+      pocketPrepared = byteBuffer.getIntForKey(Key.IoPocketPrepared)!!
+      toolInSpindle = byteBuffer.getIntForKey(Key.IoLoadedTool)!!
+    }
+    coolantStatus = coolantStatus {
+      mist = byteBuffer.getBooleanForKey(Key.IoCoolantMist)!!
+      flood = byteBuffer.getBooleanForKey(Key.IoCoolantFlood)!!
+    }
+    auxStatus = auxStatus { estop = byteBuffer.getBooleanForKey(Key.IoAuxEstop)!!.toInt() }
+    lubeStatus = lubeStatus {
+      on = byteBuffer.getBooleanForKey(Key.IoAuxLubeOn)!!
+      level = byteBuffer.getBooleanForKey(Key.IoAuxLubeLevelOk)!!.toInt()
+    }
+  }
 }
+
+internal fun Boolean.toInt() = if (this) 1 else 0

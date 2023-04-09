@@ -12,6 +12,7 @@
             <option value="$PROJECT_DIR$/buildSrc" />
             <option value="$PROJECT_DIR$/ktlcnc" />
             <option value="$PROJECT_DIR$/ktlcnc-model" />
+            <option value="$PROJECT_DIR$/protos" />
             <option value="$PROJECT_DIR$/sample" />
           </set>
         </option>
