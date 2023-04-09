@@ -1,7 +1,8 @@
 object Libs {
 
   object Kotlinx {
-    const val coroutines_core = "org.jetbrains.kotlinx:kotlinx-coroutines-core:${Versions.coroutines}"
+    const val coroutines_core =
+      "org.jetbrains.kotlinx:kotlinx-coroutines-core:${Versions.coroutines}"
   }
   object Protobuf {
     const val proto_kotlin =

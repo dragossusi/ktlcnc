@@ -27,8 +27,7 @@ class MotionStatusFactory(
       analogOutput.addAll(parseAnalogIO(byteBuffer, Key.Motion64AnalogOutputsDouble))
       onSoftLimit = byteBuffer.getBooleanForKey(Key.MotionOnSoftLimit)!!.toInt()
       externalOffsetsApplied = byteBuffer.getBooleanForKey(Key.ExternalOffsetsApplied)!!.toInt()
-      eoffsetPose =
-        positionFactory.parse(byteBuffer, PositionFactory.PositionType.EXTERNAL_OFFSETS)
+      eoffsetPose = positionFactory.parse(byteBuffer, PositionFactory.PositionType.EXTERNAL_OFFSETS)
       numExtraJoints = byteBuffer.getIntForKey(Key.NumExtraJoints)!!
     }
   }

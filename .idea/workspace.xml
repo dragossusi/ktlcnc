@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="ed41462f-8126-427a-9d41-b9885a6dee59" name="Changes" comment="Gitignore fix">
+      <change afterPath="$PROJECT_DIR$/buildSrc/src/main/kotlin/Libs.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/buildSrc/src/main/kotlin/Versions.kt" beforeDir="false" afterPath="$PROJECT_DIR$/buildSrc/src/main/kotlin/Versions.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ktlcnc-model/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/ktlcnc-model/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ktlcnc-model/src/main/kotlin/com/mindovercnc/linuxcnc/model/CncStatus.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ktlcnc-model/src/main/kotlin/com/mindovercnc/linuxcnc/model/CncStatusExt.kt" beforeDir="false" afterPath="$PROJECT_DIR$/ktlcnc-model/src/main/kotlin/com/mindovercnc/linuxcnc/model/CncStatusExt.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ktlcnc-model/src/main/kotlin/com/mindovercnc/linuxcnc/model/FileExtension.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ktlcnc-model/src/main/kotlin/com/mindovercnc/linuxcnc/model/InterpreterState.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ktlcnc-model/src/main/kotlin/com/mindovercnc/linuxcnc/model/IoStatus.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ktlcnc-model/src/main/kotlin/com/mindovercnc/linuxcnc/model/JointStatus.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ktlcnc-model/src/main/kotlin/com/mindovercnc/linuxcnc/model/MotionStatus.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ktlcnc-model/src/main/kotlin/com/mindovercnc/linuxcnc/model/TaskMode.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ktlcnc-model/src/main/kotlin/com/mindovercnc/linuxcnc/model/TaskState.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ktlcnc-model/src/main/kotlin/com/mindovercnc/linuxcnc/model/TaskStatus.kt" beforeDir="false" afterPath="$PROJECT_DIR$/ktlcnc-model/src/main/kotlin/com/mindovercnc/linuxcnc/model/TaskStatus.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ktlcnc-model/src/main/kotlin/com/mindovercnc/linuxcnc/model/TextLines.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ktlcnc-model/src/main/kotlin/com/mindovercnc/linuxcnc/model/ToolStatus.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ktlcnc-model/src/main/kotlin/com/mindovercnc/linuxcnc/model/TrajectoryStatus.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ktlcnc/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/ktlcnc/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ktlcnc/src/main/kotlin/com/mindovercnc/linuxcnc/parsing/CncStatusFactory.kt" beforeDir="false" afterPath="$PROJECT_DIR$/ktlcnc/src/main/kotlin/com/mindovercnc/linuxcnc/parsing/CncStatusFactory.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ktlcnc/src/main/kotlin/com/mindovercnc/linuxcnc/parsing/IoStatusFactory.kt" beforeDir="false" afterPath="$PROJECT_DIR$/ktlcnc/src/main/kotlin/com/mindovercnc/linuxcnc/parsing/IoStatusFactory.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ktlcnc/src/main/kotlin/com/mindovercnc/linuxcnc/parsing/JointStatusFactory.kt" beforeDir="false" afterPath="$PROJECT_DIR$/ktlcnc/src/main/kotlin/com/mindovercnc/linuxcnc/parsing/JointStatusFactory.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ktlcnc/src/main/kotlin/com/mindovercnc/linuxcnc/parsing/MotionStatusFactory.kt" beforeDir="false" afterPath="$PROJECT_DIR$/ktlcnc/src/main/kotlin/com/mindovercnc/linuxcnc/parsing/MotionStatusFactory.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ktlcnc/src/main/kotlin/com/mindovercnc/linuxcnc/parsing/TaskStatusFactory.kt" beforeDir="false" afterPath="$PROJECT_DIR$/ktlcnc/src/main/kotlin/com/mindovercnc/linuxcnc/parsing/TaskStatusFactory.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ktlcnc/src/main/kotlin/com/mindovercnc/linuxcnc/parsing/TrajectoryStatusFactory.kt" beforeDir="false" afterPath="$PROJECT_DIR$/ktlcnc/src/main/kotlin/com/mindovercnc/linuxcnc/parsing/TrajectoryStatusFactory.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/protos/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/protos/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle.kts" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$/library">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/ktlcnc">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/ktlcnc-model">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="ktlcnc" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="ktlcnc" type="f1a62948:ProjectNode" />
+                <item name="ktlcnc-model" type="2d1252cf:ModuleNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="ktlcnc" type="f1a62948:ProjectNode" />
+                <item name="ktlcnc-model" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="ktlcnc" type="f1a62948:ProjectNode" />
+                <item name="ktlcnc-model" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Kotlin Class" />
+        <option value="Kotlin File" />
+        <option value="Kotlin Interface" />
+        <option value="Kotlin Object" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/protos/src/main/proto" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="29KX4tpiUAUeKLKJIuuxHIIhpMn" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/dragos/IdeaProjects/ktcnc&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.facebook.ktfmt_idea_plugin.settings&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/buildSrc/src/main/kotlin" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/library/src/main/kotlin/com/mindovercnc/linuxcnc/model" />
+      <recent name="$PROJECT_DIR$/library" />
+      <recent name="$PROJECT_DIR$/sample" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/ktlcnc/src/test/kotlin/com/mindovercnc/linuxcnc/nml" />
+      <recent name="$PROJECT_DIR$/library" />
+    </key>
+    <key name="CopyKotlinDeclarationDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Gradle.ktlcnc:ktlcnc-model [build]">
+    <configuration name="NmlTest.testBumpBufDesc" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":ktlcnc:test" />
+            <option value="--tests" />
+            <option value="&quot;com.mindovercnc.linuxcnc.nml.NmlTest.testBumpBufDesc&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <ForceTestExec>false</ForceTestExec>
+      <method v="2" />
+    </configuration>
+    <configuration name="ktlcnc [publishToMavenLocal]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="publishToMavenLocal" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <ForceTestExec>false</ForceTestExec>
+      <method v="2" />
+    </configuration>
+    <configuration name="ktlcnc:ktlcnc [jar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/ktlcnc" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="jar" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <ForceTestExec>false</ForceTestExec>
+      <method v="2" />
+    </configuration>
+    <configuration name="ktlcnc:ktlcnc-model [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/ktlcnc-model" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <ForceTestExec>false</ForceTestExec>
+      <method v="2" />
+    </configuration>
+    <configuration name="ktlcnc:ktlcnc-model [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/ktlcnc-model" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="clean" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <ForceTestExec>false</ForceTestExec>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Gradle.ktlcnc:ktlcnc-model [build]" />
+      <item itemvalue="Gradle.ktlcnc:ktlcnc-model [clean]" />
+      <item itemvalue="Gradle.NmlTest.testBumpBufDesc" />
+      <item itemvalue="Gradle.ktlcnc [publishToMavenLocal]" />
+      <item itemvalue="Gradle.ktlcnc:ktlcnc [jar]" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.ktlcnc:ktlcnc-model [build]" />
+        <item itemvalue="Gradle.ktlcnc:ktlcnc-model [clean]" />
+        <item itemvalue="Gradle.ktlcnc [publishToMavenLocal]" />
+        <item itemvalue="Gradle.NmlTest.testBumpBufDesc" />
+        <item itemvalue="Gradle.ktlcnc:ktlcnc [jar]" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ed41462f-8126-427a-9d41-b9885a6dee59" name="Changes" comment="" />
+      <created>1652862566758</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1652862566758</updated>
+    </task>
+    <task id="LOCAL-00001" summary="First version">
+      <created>1652889963259</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1652889963259</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Fixed maven local">
+      <created>1652890292499</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1652890292499</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Fixed offsets">
+      <created>1652946422624</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1652946422624</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Changed string to file">
+      <created>1652957084834</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1652957084834</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Gitignore fix">
+      <created>1653032965373</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1653032965373</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="First version" />
+    <MESSAGE value="Fixed maven local" />
+    <MESSAGE value="Fixed offsets" />
+    <MESSAGE value="Changed string to file" />
+    <MESSAGE value="Gitignore fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="Gitignore fix" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/library/src/main/kotlin/com/mindovercnc/linuxcnc/nml/CheckBuffDescriptor.kt</url>
+          <line>48</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

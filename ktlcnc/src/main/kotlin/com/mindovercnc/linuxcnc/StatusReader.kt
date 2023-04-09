@@ -1,9 +1,9 @@
 package com.mindovercnc.linuxcnc
 
-import kotlinx.coroutines.delay
-import kotlinx.coroutines.flow.flow
 import java.nio.ByteBuffer
 import java.nio.ByteOrder
+import kotlinx.coroutines.delay
+import kotlinx.coroutines.flow.flow
 
 /*
  * **************************************************************************
@@ -32,22 +32,22 @@ import java.nio.ByteOrder
  * **************************************************************************
  */
 class StatusReader {
-    private val statusBuffer: ByteBuffer?
+  private val statusBuffer: ByteBuffer?
 
-    init {
-        statusBuffer = init()
-        statusBuffer?.order(ByteOrder.LITTLE_ENDIAN)
+  init {
+    statusBuffer = init()
+    statusBuffer?.order(ByteOrder.LITTLE_ENDIAN)
+  }
+
+  fun refresh(interval: Long) = flow {
+    while (true) {
+      readStatus()
+      emit(statusBuffer)
+      delay(interval)
     }
+  }
 
-    fun refresh(interval: Long) = flow {
-        while (true) {
-            readStatus()
-            emit(statusBuffer)
-            delay(interval)
-        }
-    }
-
-    private external fun init(): ByteBuffer?
-    private external fun readStatus(): Int
-    external fun getString(offset: Int, length: Int): String?
+  private external fun init(): ByteBuffer?
+  private external fun readStatus(): Int
+  external fun getString(offset: Int, length: Int): String?
 }

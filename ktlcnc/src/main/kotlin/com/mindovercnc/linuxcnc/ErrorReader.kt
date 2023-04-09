@@ -1,9 +1,9 @@
 package com.mindovercnc.linuxcnc
 
 import com.mindovercnc.linuxcnc.model.SystemMessage
+import java.util.*
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.flow
-import java.util.*
 
 /*
  * **************************************************************************
@@ -32,20 +32,18 @@ import java.util.*
  * **************************************************************************
  */
 class ErrorReader {
-    var isBackendAvailable = false
-    private external fun init(): Int
-    private external fun fetchMessage(): SystemMessage?
+  var isBackendAvailable = false
+  private external fun init(): Int
+  private external fun fetchMessage(): SystemMessage?
 
-    init {
-        isBackendAvailable = init() >= 0
-    }
+  init {
+    isBackendAvailable = init() >= 0
+  }
 
-    fun refresh(interval: Long) = flow {
-        while (true) {
-            emit(fetchMessage()?.apply {
-                time = Date()
-            })
-            delay(interval)
-        }
+  fun refresh(interval: Long) = flow {
+    while (true) {
+      emit(fetchMessage()?.apply { time = Date() })
+      delay(interval)
     }
+  }
 }

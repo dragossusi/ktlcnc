@@ -1,4 +1,5 @@
 # Kotlin LinuxCNC
+
 Kotlin library to communicate with LinuxCNC using JNI.
 
 ## Setup
@@ -9,12 +10,10 @@ Kotlin library to communicate with LinuxCNC using JNI.
 
 You need to define the paths first, in env variables or `gradle.properties` for genereting the jar.
 
-
 | Env           | Property      | Description                |
 |---------------|---------------|----------------------------|
 | LINUXCNC_HOME | linuxcnc.home | The linuxcnc home folder   |
 | LINUXCNC_JDK  | linuxcnc.jdk  | The jdk to be used for JNI |
-
 
 Example using env(required for `make`):
 
@@ -31,6 +30,7 @@ make
 ```
 
 If you need to regenerate:
+
 ```shell
 make clean
 make

@@ -29,47 +29,50 @@ import java.util.regex.Pattern
  *
  * **************************************************************************
  */
-data class SystemMessage @JvmOverloads constructor(
-    val message: String,
-    val type: MessageType = MessageType.CommandLog,
-    var time: Date = Date()
+data class SystemMessage
+@JvmOverloads
+constructor(
+  val message: String,
+  val type: MessageType = MessageType.CommandLog,
+  var time: Date = Date()
 ) : Comparable<SystemMessage> {
 
-    enum class MessageType(val typeNum: Int) {
-        NMLError(1),
-        NMLText(2),
-        NMLDisplay(3),
-        CommandLog(7),
-        OperatorError(11),
-        OperatorText(12),
-        OperatorDisplay(13);
-    }
+  enum class MessageType(val typeNum: Int) {
+    NMLError(1),
+    NMLText(2),
+    NMLDisplay(3),
+    CommandLog(7),
+    OperatorError(11),
+    OperatorText(12),
+    OperatorDisplay(13)
+  }
 
-    override fun compareTo(other: SystemMessage): Int {
-        return when (other.time.time) {
-            time.time -> other.type.compareTo(type)
-            else -> other.time.compareTo(time)
-        }
+  override fun compareTo(other: SystemMessage): Int {
+    return when (other.time.time) {
+      time.time -> other.type.compareTo(type)
+      else -> other.time.compareTo(time)
     }
+  }
 
-    companion object {
-        @JvmStatic
-        fun parseMessage(source: String): SystemMessage? {
-            val parts = source.split(Pattern.compile("\\s+"), 3).toTypedArray()
-            if (parts.size < 3) return null
-            val typeNum = parts[0].toInt()
-            val time = Date(parts[1].toLong())
-            val mt = when (typeNum) {
-                1 -> MessageType.NMLError
-                2 -> MessageType.NMLText
-                3 -> MessageType.NMLDisplay
-                7 -> MessageType.CommandLog
-                11 -> MessageType.OperatorError
-                12 -> MessageType.OperatorText
-                13 -> MessageType.OperatorDisplay
-                else -> MessageType.CommandLog
-            }
-            return SystemMessage(parts[2], mt, time)
+  companion object {
+    @JvmStatic
+    fun parseMessage(source: String): SystemMessage? {
+      val parts = source.split(Pattern.compile("\\s+"), 3).toTypedArray()
+      if (parts.size < 3) return null
+      val typeNum = parts[0].toInt()
+      val time = Date(parts[1].toLong())
+      val mt =
+        when (typeNum) {
+          1 -> MessageType.NMLError
+          2 -> MessageType.NMLText
+          3 -> MessageType.NMLDisplay
+          7 -> MessageType.CommandLog
+          11 -> MessageType.OperatorError
+          12 -> MessageType.OperatorText
+          13 -> MessageType.OperatorDisplay
+          else -> MessageType.CommandLog
         }
+      return SystemMessage(parts[2], mt, time)
     }
+  }
 }

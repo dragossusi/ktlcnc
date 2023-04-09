@@ -1,3 +1,3 @@
 object Details {
-    const val groupId = "ro.dragossusi.ktlcnc"
+  const val groupId = "ro.dragossusi.ktlcnc"
 }
